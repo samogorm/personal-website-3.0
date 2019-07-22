@@ -1,18 +1,19 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React, {useState} from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { themeColours } from './../constants/themeColours';
 
-import Header from "./header"
-import "./layout.css"
+import Header from './header'
+import './layout.css'
+
+const getRandomColor = () => {
+  return themeColours[Math.floor(Math.random() * themeColours.length)]
+}
 
 const Layout = ({ children }) => {
+  const [activeTheme, setActiveTheme] = useState('green');
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,10 +24,18 @@ const Layout = ({ children }) => {
     }
   `)
 
+  let colour = getRandomColor();
+  if (colour.name !== 'navy') setActiveTheme(colour.name);
+
+  // document.querySelector('.intro-section').addEventListener('click', () => {
+  //   let colour = getRandomColor();
+  //   if (colour.name !== 'navy') setActiveTheme(colour.name);
+  // })
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="green-theme">
+      <div className={`${activeTheme}-theme`}>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

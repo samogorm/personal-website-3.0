@@ -1,5 +1,4 @@
-export const AboutContent = [
-    {
+export const AboutContent = {
         intro: {
             title: "Hello! I'm Sam.",
             subtitle: 'Full Stack Developer',
@@ -13,5 +12,4 @@ export const AboutContent = [
                 'Based in Bolton, Manchester.'
             ]
         }
-    }
-]
+    };

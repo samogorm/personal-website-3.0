@@ -1,0 +1,22 @@
+.button {
+    border-radius: 4px;
+    font-size: 20px;
+    letter-spacing: 0;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    padding: 12px 25px;
+    margin: 0 .5rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button-fill {
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.19);
+    border: 2px solid transparent;
+}
+
+.button-outline {
+    border: 2px solid var(--main-navy);
+}

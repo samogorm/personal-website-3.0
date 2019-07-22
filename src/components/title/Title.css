@@ -1,0 +1,13 @@
+.title {
+    font-weight: 800;
+    color: var(--main-navy);
+    letter-spacing: 0;
+    font-size: 30px;
+    margin: 0;
+}
+
+@media screen and (min-width: 1280px) {
+    .title {
+        font-size: 58px;
+    }
+}

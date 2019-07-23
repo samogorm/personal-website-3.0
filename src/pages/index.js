@@ -10,9 +10,10 @@ import {Button} from './../components/button/Button'
 import {Avatar} from './../components/avatar/Avatar'
 import {SkillBlock} from './../components/skill-block/SkillBlock'
 
-// Static Content
+// Static Content - later we will use an API to get this data.
 import {AboutContent} from './../static-content/AboutContent'
 import {SkillsContent} from './../static-content/SkillsContent'
+import {ProjectsContent} from './../static-content/ProjectsContent'
 
 // Constants
 import {themeColours} from './../constants/themeColours';
@@ -70,6 +71,17 @@ const IndexPage = () => (
       </div>
       <div className="skills-grid">
         { SkillsContent.map(block => <SkillBlock key={block.id} icon={block.icon} title={block.title} subtitle={block.subtitle} />) }
+      </div>
+    </section>
+
+    {/* Projects */}
+    <section className="projects-section">
+      <div className="projects-title">
+        <Title text="Projects" />
+        <Paragraph text="In my spare time, I like to keep my skills up to date by making small, open-source apps using my favourite technology." />
+      </div>
+      <div className="projects-grid">
+        { ProjectsContent.map(project => console.log(project)) }
       </div>
     </section>
   </Layout>

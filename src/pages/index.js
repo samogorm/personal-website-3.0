@@ -9,6 +9,7 @@ import {Paragraph} from './../components/paragraph/Paragraph'
 import {Button} from './../components/button/Button'
 import {Avatar} from './../components/avatar/Avatar'
 import {SkillBlock} from './../components/skill-block/SkillBlock'
+import {ProjectBlock} from './../components/project-block/ProjectBlock'
 
 // Static Content - later we will use an API to get this data.
 import {AboutContent} from './../static-content/AboutContent'
@@ -78,10 +79,10 @@ const IndexPage = () => (
     <section className="projects-section">
       <div className="projects-title">
         <Title text="Projects" />
-        <Paragraph text="In my spare time, I like to keep my skills up to date by making small, open-source apps using my favourite technology." />
+        <Paragraph text="I like to keep my skills up to date by making small, open-source apps using my favourite technology." />
       </div>
       <div className="projects-grid">
-        { ProjectsContent.map(project => console.log(project)) }
+        { ProjectsContent.map(project => <ProjectBlock key={project.id} title={project.title} description={project.description} sourceLink={project.links.source} demoLink={project.links.demo} icon={project.icon} />) }
       </div>
     </section>
   </Layout>

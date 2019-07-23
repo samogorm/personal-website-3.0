@@ -16,6 +16,16 @@
     }
 }
 
+.project-block-header {
+    margin-bottom: 25px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
 .project-block p {
     font-size: 18px;
     color: var(--main-navy);

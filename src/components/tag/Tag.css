@@ -1,0 +1,13 @@
+.tag {
+    background: #F6F6F6;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 2px;
+}
+
+.tag > span {
+    font-size: 15px;
+    color: var(--main-navy);
+    letter-spacing: 0;
+    line-height: 18px;
+}

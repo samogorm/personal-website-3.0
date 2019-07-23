@@ -1,7 +1,8 @@
 import React from 'react'
 
-import {Subtitle} from './../subtitle/Subtitle'
-import {Button} from './../button/Button'
+import { Subtitle } from './../subtitle/Subtitle'
+import { Button } from './../button/Button'
+import { Tag } from '../tag/Tag'
 
 //import {themeColours} from './../../constants/themeColours';
 
@@ -15,7 +16,8 @@ export const ProjectBlock = (props) => {
                     {/* <img src={require(props.icon)} alt={`${props.title} Icon`}/> */}
                 </div>
                 <div className="project-tags">
-
+                   
+                    {props.tags.map((tag, index) => <Tag key={index} text={tag} /> )}
                 </div>
             </div>
             <div className="project-block-title">

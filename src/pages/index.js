@@ -82,7 +82,7 @@ const IndexPage = () => (
         <Paragraph text="I like to keep my skills up to date by making small, open-source apps using my favourite technology." />
       </div>
       <div className="projects-grid">
-        { ProjectsContent.map(project => <ProjectBlock key={project.id} title={project.title} description={project.description} sourceLink={project.links.source} demoLink={project.links.demo} icon={project.icon} />) }
+        { ProjectsContent.map(project => <ProjectBlock key={project.id} title={project.title} description={project.description} sourceLink={project.links.source} demoLink={project.links.demo} icon={project.icon} tags={project.tags} />) }
       </div>
     </section>
   </Layout>

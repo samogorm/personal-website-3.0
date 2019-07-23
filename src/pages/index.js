@@ -7,10 +7,12 @@ import {Title} from './../components/title/Title'
 import {Subtitle} from './../components/subtitle/Subtitle'
 import {Paragraph} from './../components/paragraph/Paragraph'
 import {Button} from './../components/button/Button'
-import {Avatar} from './../components/avatar/Avatar';
+import {Avatar} from './../components/avatar/Avatar'
+import {SkillBlock} from './../components/skill-block/SkillBlock'
 
 // Static Content
 import {AboutContent} from './../static-content/AboutContent'
+import {SkillsContent} from './../static-content/SkillsContent'
 
 // Constants
 import {themeColours} from './../constants/themeColours';
@@ -55,8 +57,19 @@ const IndexPage = () => (
           <Avatar src={avatar} alt="Picture of Sam's face." />
         </div>
         <div className="about-text">
-          { AboutContent.about.textBlocks.map(block => <Paragraph text={block} />) }
+          { AboutContent.about.textBlocks.map((block, index) => <Paragraph key={index} text={block} />) }
         </div>
+      </div>
+    </section>
+
+    {/* Skills & Expertise */}
+    <section className="skills-and-expertise">
+      <div className="skills-title">
+        <Title text="Skills &amp; Expertise" />
+        <Paragraph text="My passion and enthusiasm for coding has lead me to learn and use a multitude of technologies for side projects and professional work." />
+      </div>
+      <div className="skills-grid">
+        { SkillsContent.map(block => <SkillBlock key={block.id} icon={block.icon} title={block.title} subtitle={block.subtitle} />) }
       </div>
     </section>
   </Layout>

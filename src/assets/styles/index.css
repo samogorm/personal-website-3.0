@@ -48,7 +48,7 @@
 /* About */
 .about-section {
     padding: 5rem;
-    background: var(--main-offwhite);
+    background: var(--main-offWhite);
 }
 
 .about-content {
@@ -79,3 +79,36 @@
         width: 30%;
     }
 }
+
+/* Skills */
+.skills-and-expertise {
+    padding: 5rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-and-expertise .skills-title {
+    width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .skills-and-expertise .skills-title {
+        width: 40%;
+        padding-bottom: .5rem;
+    }
+}
+
+.skills-and-expertise .skills-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+    .skills-and-expertise .skills-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+

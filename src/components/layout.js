@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { themeColours } from './../constants/themeColours';
 
 import Header from './header'
+import './../assets/fontawesome-pro-5.8.1-web/css/all.min.css'
 import './layout.css'
 
 const getRandomColor = () => {

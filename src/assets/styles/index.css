@@ -47,8 +47,14 @@
 
 /* About */
 .about-section {
-    padding: 5rem;
+    padding: 1rem;
     background: var(--main-offWhite);
+}
+
+@media (min-width: 1280px) {
+    .about-section {
+        padding: 5rem;
+    }
 }
 
 .about-content {
@@ -82,10 +88,16 @@
 
 /* Skills and Projects */
 .skills-and-expertise {
-    padding: 5rem;
+    padding: 1rem;
     background: #fff;
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+    .skills-and-expertise {
+        padding: 5rem;
+    }
 }
 
 .skills-and-expertise .skills-title, .projects-section .projects-title {
@@ -114,8 +126,14 @@
 
 /* Projects */
 .projects-section {
-    padding: 5rem;
+    padding: 1rem;
     background: var(--main-offWhite);
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+    .projects-section {
+        padding: 5rem;
+    }
 }

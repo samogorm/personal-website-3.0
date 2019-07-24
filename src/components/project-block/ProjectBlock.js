@@ -13,10 +13,9 @@ export const ProjectBlock = (props) => {
         <div className="project-block">
             <div className="project-block-header">
                 <div className="project-icon">
-                    {/* <img src={require(props.icon)} alt={`${props.title} Icon`}/> */}
+                    <img src={props.icon} alt={`${props.title} Icon`}/>
                 </div>
                 <div className="project-tags">
-                   
                     {props.tags.map((tag, index) => <Tag key={index} text={tag} /> )}
                 </div>
             </div>
@@ -40,7 +39,7 @@ export const ProjectBlock = (props) => {
                     icon={null}
                     type="fill"
                     primaryColour=""
-                    secondaryColour="#000"
+                    secondaryColour="#fff"
                     link={props.demoLink}
                 />
             </div>

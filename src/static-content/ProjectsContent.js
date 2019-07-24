@@ -1,7 +1,7 @@
 export const ProjectsContent = [
     {
         id: 1,
-        icon: '',
+        icon: require('./../assets/images/projects/currency-converter-icon.svg'),
         title: 'Currency Converter',
         description: 'A simple currency converter web app. I designed the app and developed the front end in React. I coded the back end API in NodeJS (TypeScript). The API gathers latest currency data every 3 days.',
         links: {
@@ -19,7 +19,7 @@ export const ProjectsContent = [
     },
     {
         id: 2,
-        icon: '',
+        icon: require('./../assets/images/projects/calculator-icon.svg'),
         title: 'Simple Calculator',
         description: 'A simple calculator web app. I designed the app and developed the front end in React.',
         links: {

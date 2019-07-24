@@ -16,14 +16,23 @@
     }
 }
 
+.project-icon > img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
 .project-block-header {
     margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    justify-content: flex-end;
 }
 
 .project-block p {
@@ -36,4 +45,26 @@
 
 .project-block .project-block-footer {
     margin: 15px 0;
+}
+
+/** Theme button colours **/
+.pink-theme .project-block .button-fill {
+    background: var(--main-pink);
+}
+
+.blue-theme .project-block .button-fill {
+    background: var(--main-blue);
+}
+
+.yellow-theme .project-block .button-fill {
+    background: var(--main-yellow);
+}
+
+.green-theme .project-block .button-fill {
+    background: var(--main-green);
+}
+
+.project-block .button-fill  {
+    box-shadow: none;
+    color: var(--main-navy) !important;
 }

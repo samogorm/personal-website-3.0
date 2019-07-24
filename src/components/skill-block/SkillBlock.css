@@ -30,11 +30,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s ease-in-out;
 }
 
 .skill-block-icon i {
     color: var(--main-navy);
     font-size: 22px;
+}
+
+.skill-block-icon:hover {
+    transform: scale(1.1);
 }
 
 .skill-block-title {

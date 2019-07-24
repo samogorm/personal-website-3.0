@@ -2,21 +2,25 @@ export const SocialMediaContent = [
     {
         id: 1,
         icon: 'fab fa-github',
+        title: 'Github',
         url: 'https://github.com/samogorm'
     },
     {
         id: 2,
         icon: 'fab fa-codepen',
+        title: 'Codepen',
         url: ''
     },
     {
         id: 3,
         icon: 'fab fa-instagram',
-        url: ''
+        title: 'Instagram',
+        url: 'https://instagram.com/sam.ogorm'
     },
     {
         id: 4,
-        icon: 'fab fa-linked-in',
+        icon: 'fab fa-linkedin',
+        title: 'LinkedIn',
         url: ''
     }
 ]

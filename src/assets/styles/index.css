@@ -137,3 +137,17 @@
         padding: 5rem;
     }
 }
+
+/* Call To Action */
+.call-to-action-section {
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+    .call-to-action-section {
+        padding: 5rem;
+    }
+}

@@ -29,7 +29,7 @@ export const ProjectBlock = (props) => {
                 <div className="project-block-footer">
                     <Button
                         label="View source"
-                        icon={null}
+                        icon="fas fa-code"
                         type="outline"
                         primaryColour="transparent"
                         secondaryColour=""
@@ -37,7 +37,7 @@ export const ProjectBlock = (props) => {
                     />
                     <Button
                         label="Visit site"
-                        icon={null}
+                        icon="fas fa-arrow-right"
                         type="fill"
                         primaryColour=""
                         secondaryColour="#fff"

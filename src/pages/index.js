@@ -10,6 +10,7 @@ import {Button} from './../components/button/Button'
 import {Avatar} from './../components/avatar/Avatar'
 import {SkillBlock} from './../components/skill-block/SkillBlock'
 import {ProjectBlock} from './../components/project-block/ProjectBlock'
+import {CallToAction} from './../components/call-to-action/CallToAction';
 
 // Static Content - later we will use an API to get this data.
 import {AboutContent} from './../static-content/AboutContent'
@@ -43,7 +44,7 @@ const IndexPage = () => (
 
             <Button
               label="Let's Chat"
-              icon={null}
+              icon="fas fa-comment"
               type="outline"
               primaryColour="transparent"
               secondaryColour={themeColours[4].hex}
@@ -84,6 +85,11 @@ const IndexPage = () => (
       <div className="projects-grid">
         { ProjectsContent.map(project => <ProjectBlock key={project.id} title={project.title} description={project.description} sourceLink={project.links.source} demoLink={project.links.demo} icon={project.icon} tags={project.tags} />) }
       </div>
+    </section>
+
+    {/* Call to Action */}
+    <section className="call-to-action-section">
+      <CallToAction title="I’m always up for a chat, if you want to collaborate on something just get in touch" buttonLabel="Let's Chat" buttonIcon="fas fa-comment" />
     </section>
   </Layout>
 )

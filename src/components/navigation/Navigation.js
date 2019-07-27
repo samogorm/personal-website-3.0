@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarToggler, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
+import { Navbar, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
 
 import Logo from './../logo/Logo';
 

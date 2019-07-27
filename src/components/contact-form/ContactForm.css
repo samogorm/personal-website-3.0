@@ -1,8 +1,9 @@
 .contact-form {
     margin-top: 40px;
     background: #FFFFFF;
-    box-shadow: 0 0 0 0.5px rgba(0,0,0,.03), 0 1px 2px rgba(0,0,0,.05), 0 2px 6px rgba(0,0,0,.1);
-    border-radius: 10px;
+    border: 1px solid rgba(20,35,60,0.16);
+    box-shadow: 0 2px 11px 0 rgba(3,5,9,0.06);
+    border-radius: 4px;
     padding: 3rem;
 }
 
@@ -64,20 +65,6 @@ button:focus, button:visited {
 
 .contact-form .form-group > input:focus, .contact-form .form-group > textarea:focus {
     outline: none;
-    border: 1px solid #F7CE68;
-}
-
-.contact-button {
-    border: none;
-    display: flex;
-    flex-direction: row;
-    border-radius: 50px;
-    justify-content: center;
-    padding: 14px 25px;
-    align-items: center;
-    width: 200px;
-    transition: transform .5s ease-in-out;
-    color: #fff;
 }
 
 .contact-form-button {
@@ -86,14 +73,9 @@ button:focus, button:visited {
     justify-content: center;
 }
 
-.contact-button > i {
-    margin-right: 5px;
-}
-
-.contact-button:hover {
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(3,27,78,.1);
-    transform: translateY(-4px);
+.contact-button {
+    color: var(--main-navy) !important;
+    box-shadow: none;
 }
 
 .reset-contact-form {
@@ -112,4 +94,37 @@ button:focus, button:visited {
 
 .reset-contact-form > i {
     font-size: 14px;
+}
+
+/** Theme colours **/
+.pink-theme .contact-form .form-group > input:focus, .pink-theme .contact-form .form-group > textarea:focus {
+    border: 1px solid var(--main-pink);
+}
+
+.blue-theme .contact-form .form-group > input:focus, .blue-theme .contact-form .form-group > textarea:focus {
+    border: 1px solid var(--main-blue);
+}
+
+.yellow-theme .contact-form .form-group > input:focus, .yellow-theme .contact-form .form-group > textarea:focus {
+    border: 1px solid var(--main-yellow);
+}
+
+.green-theme .contact-form .form-group > input:focus, .green-theme .contact-form .form-group > textarea:focus {
+    border: 1px solid var(--main-green);
+}
+
+.pink-theme .contact-button {
+    background: var(--main-pink);
+}
+
+.blue-theme .contact-button {
+    background: var(--main-blue);
+}
+
+.yellow-theme .contact-button {
+    background: var(--main-yellow);
+}
+
+.green-theme .contact-button {
+    background: var(--main-green);
 }

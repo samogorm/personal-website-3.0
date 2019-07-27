@@ -17,16 +17,6 @@ const getRandomColor = () => {
 const Layout = ({ children }) => {
   const [activeTheme, setActiveTheme] = useState('green');
 
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   let colour = getRandomColor();
   if (colour.name !== 'navy') setActiveTheme(colour.name);
 
@@ -37,7 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <div className={`${activeTheme}-theme`}>
         <main>{children}</main>
         <Footer/>

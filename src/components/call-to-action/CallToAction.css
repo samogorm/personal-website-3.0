@@ -13,17 +13,9 @@
     }
 }
 
-.call-to-action .title {
-    margin-bottom: 25px;
-}
-
 @media (min-width: 1280px) {
     .call-to-action {
-        padding: 5rem;
-    }
-
-    .call-to-action .title  {
-        margin-bottom: 45px;
+        padding: 7rem;
     }
 }
 

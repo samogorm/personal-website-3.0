@@ -139,7 +139,7 @@
 }
 
 /* Call To Action */
-.call-to-action-section {
+.call-to-action-section, .contact {
     padding: 1rem;
     background: #fff;
     display: flex;
@@ -147,7 +147,29 @@
 }
 
 @media (min-width: 1280px) {
-    .call-to-action-section {
+    .call-to-action-section, .contact {
         padding: 5rem;
+    }
+}
+
+.contact {
+    background: var(--main-offWhite);
+    display: flex;
+}
+
+.contact-form-wrapper {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.contact > .contact-form-wrapper > .contact-form {
+    width: 100%;
+    justify-content: center;
+}
+
+@media (min-width: 1280px) {
+    .contact > .contact-form-wrapper > .contact-form {
+        width: 50%;
     }
 }

@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import { Formik, Form, Field } from 'formik';
 import ContactFormSchema from './validation/ContactFormSchema';
-import Paragraph from './../paragraph/Paragraph';
+import {Paragraph} from './../paragraph/Paragraph';
 
 import './ContactForm.css';
 
-class ContactForm extends Component {
+export class ContactForm extends Component {
     constructor(props) {
         super(props);
 
@@ -17,8 +17,6 @@ class ContactForm extends Component {
             email: '',
             message: ''
         }
-
-        this._postContactFormData = this._postContactFormData.bind(this);
     }
     render = () => {
         return(
@@ -37,8 +35,6 @@ class ContactForm extends Component {
                     }}
                     validationSchema={ContactFormSchema}
                     onSubmit={(values, {resetForm}) => {
-                        // same shape as initial values
-                        this._postContactFormData(values);
                         resetForm();
                     }}
                     >
@@ -85,15 +81,17 @@ class ContactForm extends Component {
         if(this.state.success !== null) {
             // clear the form
             return (
-                <button type="button" className="contact-button" style={{backgroundImage:  `linear-gradient(90deg, #21D4FD 0%, #2AF598 100%)`}}>
-                    <i className="far fa-envelope"></i> Message Sent!
+                <button type="button" className="button button-fill contact-button contact-button-sent">
+                    <i className="far fa-envelope"></i> 
+                    Message Sent!
                 </button>
             )
         }
         
         return (
-            <button type="submit" className="contact-button" style={{backgroundImage: `linear-gradient(90deg, #F7CE68 0%, #FBAB7E 100%)`}}>
-                <i className="far fa-envelope-open-text"></i>  Send Message
+            <button type="submit" className="button button-fill contact-button">
+                <i className="far fa-envelope-open-text"></i>
+                 Send Message
             </button>
         )
     }
@@ -123,46 +121,4 @@ class ContactForm extends Component {
         })
     }
 
-    /**
-     * Posts contact form data to API endpoint.
-     * @param {Object} data the data to be sent.
-     */
-    _postContactFormData = (data) => {
-        let body = {
-            name: data.name,
-            email: data.email,
-            message: data.message
-        }
-        let config = {
-            method: 'POST', 
-            headers: {
-                'content-type': 'application/json',
-                'accept': 'application/json',
-            },
-            body: JSON.stringify(body)
-        }
-
-        this.setState({isSubmitting: true});
-
-        // Todo: Move API endpoint to .env file.
-        return fetch('http://localhost:1337/contacts', config)
-            .then(response => response.json()
-                .then(contactForm => ({contactForm, response}))
-                .then(({contactForm, response}) => {
-                    if(!response.ok) {
-                        this.setState({success: false})
-                        return Promise.reject(contactForm);
-                    }
-                    this.setState({success: true})
-                    return Promise.resolve(contactForm);
-                })
-            )
-            .catch(error => {
-                this.setState({error: error})
-                console.log(error);
-            });
-    }
-
 }
-
-export default ContactForm;

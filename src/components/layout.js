@@ -20,10 +20,15 @@ const Layout = ({ children }) => {
   let colour = getRandomColor();
   if (colour.name !== 'navy') setActiveTheme(colour.name);
 
+  // let count = 0;
   // document.querySelector('.intro-section').addEventListener('click', () => {
-  //   let colour = getRandomColor();
-  //   if (colour.name !== 'navy') setActiveTheme(colour.name);
-  // })
+  //   if(count <= 4) {
+  //     let colour = getRandomColor();
+  //     if (colour.name !== 'navy') setActiveTheme(colour.name);
+  //   }
+
+  //   count = count+1;
+  // });
 
   return (
     <>

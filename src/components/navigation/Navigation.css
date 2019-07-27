@@ -88,3 +88,7 @@
 .sub-nav-open {
     background: #fff;
 }
+
+.fa-bars {
+    color: var(--main-navy);
+}

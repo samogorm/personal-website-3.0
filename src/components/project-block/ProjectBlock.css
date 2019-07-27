@@ -52,6 +52,21 @@
     margin: 15px 0;
 }
 
+@media (max-width: 1279px) {
+    .project-block .project-block-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-block .project-block-footer a:first-child {
+        margin-bottom: 10px;
+    }
+
+     .project-block .project-block-footer a {
+         text-align: center;
+     }
+}
+
 /** Theme button colours **/
 .pink-theme .project-block .button-fill {
     background: var(--main-pink);

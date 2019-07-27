@@ -18,6 +18,7 @@
 .social-media-icon > a {
     font-size: 25px;
     margin: 0 20px;
+    transition: all .5s ease-in-out;
 }
 
 @media (min-width: 1280px) {
@@ -27,22 +28,27 @@
     }
 }
 
+.social-media-icon > a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 /** Theme colours **/
-.pink-theme .social-media-icon > a {
+.pink-theme .social-media-icon > a:hover {
     color: var(--main-pink);
 }
 
-.blue-theme .social-media-icon > a {
+.blue-theme .social-media-icon > a:hover {
     color: var(--main-blue);
 }
 
-.yellow-theme .social-media-icon > a  {
+.yellow-theme .social-media-icon > a:hover  {
     color: var(--main-yellow);
 }
 
-.green-theme .social-media-icon > a {
+.green-theme .social-media-icon > a:hover {
     color: var(--main-green);
 }
+
 
 .footer-layer {
     background: var(--main-navy);

@@ -12,7 +12,7 @@ const _renderIcon = (icon) => {
 
 export const Button = (props) => {
     return (
-        <a href={props.href} className={`button button-${props.type}`} 
+        <a href={props.link} className={`button button-${props.type}`} 
             style={{
                 background: props.primaryColour,  
                 color: props.secondaryColour

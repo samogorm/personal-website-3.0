@@ -18,4 +18,14 @@ body {
   --main-green: #BCF1CD;
   --main-navy: #14233C;
   --main-offWhite: #f9f9f9;
+
+  --main-pink-hover: #e79e9e;
+  --main-blue-hover: #aedbe6;
+  --main-yellow-hover: #e4c98c;
+  --main-green-hover: #a4d4b3;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: var(--main-navy);
 }

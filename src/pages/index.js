@@ -54,7 +54,7 @@ const IndexPage = () => (
     </section>
 
     {/* About */}
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-content">
         <div className="about-avatar">
           <Avatar src={avatar} alt="Picture of Sam's face." />
@@ -66,7 +66,7 @@ const IndexPage = () => (
     </section>
 
     {/* Skills & Expertise */}
-    <section className="skills-and-expertise">
+    <section id="skills-and-expertise" className="skills-and-expertise">
       <div className="skills-title">
         <Title text="Skills &amp; Expertise" />
         <Paragraph text="My passion and enthusiasm for coding has lead me to learn and use a multitude of technologies for side projects and professional work." />
@@ -77,7 +77,7 @@ const IndexPage = () => (
     </section>
 
     {/* Projects */}
-    <section className="projects-section">
+    <section id="projects" className="projects-section">
       <div className="projects-title">
         <Title text="Projects" />
         <Paragraph text="I like to keep my skills up to date by making small, open-source apps using my favourite technology." />

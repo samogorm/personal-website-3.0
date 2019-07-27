@@ -7,6 +7,7 @@ import {Footer} from './../components/footer/Footer';
 
 import Header from './header'
 import './../assets/fontawesome-pro-5.8.1-web/css/all.min.css'
+import './../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './layout.css'
 
 const getRandomColor = () => {

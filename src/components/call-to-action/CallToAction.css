@@ -4,6 +4,15 @@
     border-radius: 5px;
 }
 
+@media (max-width: 1279px) {
+    .call-to-action {
+        height: 230px;
+        display: flex;
+        align-items: center;
+        padding: 0 1rem 1rem 1rem;
+    }
+}
+
 .call-to-action .title {
     margin-bottom: 25px;
 }

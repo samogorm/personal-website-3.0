@@ -30,3 +30,7 @@
 .button-outline {
     border: 2px solid var(--main-navy);
 }
+
+.button-outline:hover {
+    background: rgba(20, 35, 60, 0.1) !important;
+}

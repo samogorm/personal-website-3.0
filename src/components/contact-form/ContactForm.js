@@ -39,7 +39,7 @@ export class ContactForm extends Component {
                     }}
                     >
                     {({ errors, touched }) => (
-                        <Form data-netlify="true">
+                        <Form netlify>
                             <div className="form-group">
                                 <label className="form-label">Name</label>
                                 <Field name="name" component="input" placeholder="Enter your full name..." />

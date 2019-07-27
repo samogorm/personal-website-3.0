@@ -146,7 +146,7 @@ export class ContactForm extends Component {
 
         this.setState({ isSubmitting: true });
 
-        return fetch('/?no-cache=1', config)
+        return fetch('/', config)
             .then(() => {
                 this.setState({ success: true })
             })

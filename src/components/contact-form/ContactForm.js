@@ -41,7 +41,7 @@ export class ContactForm extends Component {
                     }}
                     >
                     {({ errors, touched }) => (
-                        <Form data-netlify='true' data-netlify-honeypot='bot-field'>
+                        <Form data-netlify="true" name="contact" data-netlify-honeypot="bot-field">
                             <div className="form-group">
                                 <label className="form-label">Name</label>
                                 <Field name="name" component="input" placeholder="Enter your full name..." />

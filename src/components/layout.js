@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import { themeColours } from './../constants/themeColours';
 import {Footer} from './../components/footer/Footer';

@@ -4,6 +4,7 @@ import ContactFormSchema from './validation/ContactFormSchema';
 import {Paragraph} from './../paragraph/Paragraph';
 
 import './ContactForm.css';
+import { encode } from 'punycode';
 
 export class ContactForm extends Component {
     constructor(props) {
@@ -35,11 +36,12 @@ export class ContactForm extends Component {
                     }}
                     validationSchema={ContactFormSchema}
                     onSubmit={(values, {resetForm}) => {
+                        this._postContactFormData(values);
                         resetForm();
                     }}
                     >
                     {({ errors, touched }) => (
-                        <Form netlify netlify-honeypot="bot-field">
+                        <Form data-netlify='true'data-netlify-honeypot='bot-field'>
                             <div className="form-group">
                                 <label className="form-label">Name</label>
                                 <Field name="name" component="input" placeholder="Enter your full name..." />
@@ -119,6 +121,47 @@ export class ContactForm extends Component {
             email: '',
             message: ''
         })
+    }
+
+    /**
+    * Posts contact form data to API endpoint.
+    * @param {Object} data the data to be sent.
+    */
+    _postContactFormData = (data) => {
+        let body = {
+            name: data.name,
+            email: data.email,
+            message: data.message
+        }
+        let config = {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            body: encode({
+                'form-name': 'contact',
+                ...body
+            })
+        }
+
+        this.setState({ isSubmitting: true });
+
+        return fetch('/', config)
+            .then(response => response.json()
+                .then(contactForm => ({ contactForm, response }))
+                .then(({ contactForm, response }) => {
+                    if (!response.ok) {
+                        this.setState({ success: false })
+                        return Promise.reject(contactForm);
+                    }
+                    this.setState({ success: true })
+                    return Promise.resolve(contactForm);
+                })
+            )
+            .catch(error => {
+                this.setState({ error: error })
+                console.log(error);
+            });
     }
 
 }

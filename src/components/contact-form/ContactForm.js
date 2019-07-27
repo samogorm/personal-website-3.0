@@ -146,21 +146,13 @@ export class ContactForm extends Component {
 
         this.setState({ isSubmitting: true });
 
-        return fetch('/', config)
-            .then(response => response.json()
-                .then(contactForm => ({ contactForm, response }))
-                .then(({ contactForm, response }) => {
-                    if (!response.ok) {
-                        this.setState({ success: false })
-                        return Promise.reject(contactForm);
-                    }
-                    this.setState({ success: true })
-                    return Promise.resolve(contactForm);
-                })
-            )
+        return fetch('/?no-cache=1', config)
+            .then(() => {
+                this.setState({ success: true })
+            })
             .catch(error => {
-                this.setState({ error: error })
-                console.log(error);
+                this.setState({ success: false });
+                console.log("Error: ", error);
             });
     }
 

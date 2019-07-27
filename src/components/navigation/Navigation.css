@@ -81,6 +81,12 @@
     box-shadow: 0px 8px 7px -9px rgba(46,46,46,0.09);
 }
 
+@media screen and (min-width: 1280px) {
+    .nav-scrolled {
+        padding: 0rem 4rem !important;
+    }
+}
+
 .nav-brand .nav-link {
     padding: .5rem 0 !important;
 }

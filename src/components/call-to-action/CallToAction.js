@@ -1,8 +1,6 @@
 import React from 'react'
 
 import {Title} from './../title/Title'
-import {themeColours} from './../../constants/themeColours';
-
 import './CallToAction.css'
 
 export const CallToAction = (props) => {

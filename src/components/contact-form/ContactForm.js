@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Formik, Form, Field } from 'formik';
+import qs from 'qs';
 import ContactFormSchema from './validation/ContactFormSchema';
 import {Paragraph} from './../paragraph/Paragraph';
 
@@ -32,7 +33,9 @@ export class ContactForm extends Component {
                     initialValues={{
                         name: this.state.name,
                         email: this.state.email,
-                        message: this.state.message
+                        message: this.state.message,
+                        "bot-field": "",
+                        "form-name": "contact"
                     }}
                     validationSchema={ContactFormSchema}
                     onSubmit={(values, {resetForm}) => {
@@ -128,20 +131,12 @@ export class ContactForm extends Component {
     * @param {Object} data the data to be sent.
     */
     _postContactFormData = (data) => {
-        let body = {
-            name: data.name,
-            email: data.email,
-            message: data.message
-        }
         let config = {
             method: 'POST',
             headers: {
                 'content-type': 'application/x-www-form-urlencoded'
             },
-            body: encode({
-                'form-name': 'contact',
-                ...body
-            })
+            body: qs.stringify(data)
         }
 
         this.setState({ isSubmitting: true });

@@ -21,7 +21,7 @@ export const ProjectsContent = [
         id: 2,
         icon: require('./../assets/images/projects/calculator-icon.svg'),
         title: 'Simple Calculator',
-        description: 'A simple calculator web app. I designed the app and developed the front end in React.',
+        description: 'A simple calculator web app which was built so I could learn React Hooks. I designed the app and developed the front end in React.',
         links: {
             demo: 'https://samogorm.github.io/simple-calculator/',
             source: 'https://github.com/samogorm/simple-calculator'

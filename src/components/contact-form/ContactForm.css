@@ -1,5 +1,4 @@
 .contact-form {
-    margin-top: 40px;
     background: #FFFFFF;
     border: 1px solid rgba(20,35,60,0.16);
     box-shadow: 0 2px 11px 0 rgba(3,5,9,0.06);
@@ -21,7 +20,7 @@ button:focus, button:visited {
 .contact-form-info > h3 {
     font-weight: bold;
     font-size: 35px;
-    color: #20232A;
+    color: var(--main-navy);
     letter-spacing: 0;
     text-align: center;
 }
@@ -38,7 +37,7 @@ button:focus, button:visited {
 
 .contact-form .form-group > .form-label {
     font-size: 16px;
-    color: #20232A;
+    color: var(--main-navy);
     font-weight: bold;
     letter-spacing: 0;
 }
@@ -59,7 +58,7 @@ button:focus, button:visited {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     padding: .5rem;
-    color: #20232A;
+    color: var(--main-navy);
     font-size: 14px;
 }
 

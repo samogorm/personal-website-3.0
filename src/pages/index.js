@@ -42,6 +42,8 @@ const IndexPage = () => {
                 type="fill" 
                 primaryColour={themeColours[4].hex}
                 secondaryColour="#fff"
+                link="#about"
+                scrollTo={true}
               />
 
               <Button
@@ -50,6 +52,8 @@ const IndexPage = () => {
                 type="outline"
                 primaryColour="transparent"
                 secondaryColour={themeColours[4].hex}
+                link="#contact"
+                scrollTo={true}
               />
           </div>
         </div>
@@ -95,7 +99,7 @@ const IndexPage = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="contact">
+      <section id="contact" className="contact">
         <div className="contact-form-wrapper">
           <ContactForm />
         </div>

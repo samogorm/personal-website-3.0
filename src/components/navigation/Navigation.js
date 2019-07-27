@@ -51,13 +51,13 @@ class Navigation extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="#about">About</NavLink>
+                            <NavLink onClick={() => this._scrollToElement('#about')}>About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#skills">Skills &amp; Expertise</NavLink>
+                            <NavLink onClick={() => this._scrollToElement('#skills-and-expertise')}>Skills &amp; Expertise</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#projects">Projects</NavLink>
+                            <NavLink onClick={() => this._scrollToElement('#projects')}>Projects</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
@@ -85,6 +85,11 @@ class Navigation extends Component {
         } else {
             nav.classList.remove('nav-scrolled');
         }
+    }
+
+    _scrollToElement = (element) => {
+        element = document.querySelector(element);
+        element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
     }
 }
 

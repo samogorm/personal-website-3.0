@@ -58,10 +58,12 @@
 .navbar-nav .nav-item a {
     color: var(--main-navy);
     font-weight: 600;
+    transition: all .5s ease-in-out;
 }
 
 .navbar-nav .nav-item a:hover {
-    color: var(--main-navy);
+    color: var(--main-navy-hover) !important;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {

@@ -4,7 +4,7 @@ import { Navbar, Nav, NavItem, NavLink, Collapse } from 'reactstrap';
 import Logo from './../logo/Logo';
 
 import './Navigation.css';
-import brand from './../../assets/images/sam-pixel.svg';
+import brand from './../../assets/images/sam-pixel.png';
 
 class Navigation extends Component {
     constructor(props) {

@@ -8,6 +8,13 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding: 1rem;
+}
+
+@media (min-width: 1280px) {
+    .intro-section {
+        padding: 5rem;
+    }
 }
 
 .intro-section .introduction {

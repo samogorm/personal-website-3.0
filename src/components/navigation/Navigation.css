@@ -22,7 +22,7 @@
 
 .navbar {
     position: fixed !important;
-    padding: 1rem 4rem !important;
+    padding: 1rem 1rem !important;
     z-index: 20;
     width: 100%;
     transition: all .5s ease-in-out;
@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 1280px) {
     .navbar {
-        padding: 3rem 4rem;
+        padding: 1rem 4rem !important;
     }
     
    .navbar-nav {

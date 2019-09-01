@@ -30,5 +30,19 @@ export const ProjectsContent = [
             'React',
             'UI Design'
         ]
+    },
+    {
+        id: 3,
+        icon: require('./../assets/images/projects/lifetime-icon.svg'),
+        title: 'Lifetime Project',
+        description: 'A small web application that shows you how much time you have left to live your life.',
+        links: {
+            demo: 'https://lifetimeproject.netlify.com/',
+            source: 'https://github.com/samogorm/lifetime'
+        },
+        tags: [
+            'React',
+            'UI Design'
+        ]
     }
 ]

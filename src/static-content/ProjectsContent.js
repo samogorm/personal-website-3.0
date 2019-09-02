@@ -44,5 +44,19 @@ export const ProjectsContent = [
             'React',
             'UI Design'
         ]
+    },
+    {
+        id: 4,
+        icon: require('./../assets/images/projects/simple-todos-icon.svg'),
+        title: 'Simple Todos',
+        description: 'A very simple web application that will add/remove todos using the browser\'s localStorage feature.',
+        links: {
+            demo: 'https://simple-todos.netlify.com/',
+            source: 'https://github.com/samogorm/simple-todos'
+        },
+        tags: [
+            'React',
+            'UI Design'
+        ]
     }
 ]

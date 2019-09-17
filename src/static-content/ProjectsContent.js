@@ -58,5 +58,20 @@ export const ProjectsContent = [
             'React',
             'UI Design'
         ]
+    },
+    {
+        id: 5,
+        icon: require('./../assets/images/projects/weather-app.svg'),
+        title: 'Basic Weather App',
+        description: 'A basic web application that will get your current location weather and allow you to add other weather locations.',
+        links: {
+            demo: 'https://basic-weather.netlify.com',
+            source: 'https://github.com/samogorm/weather-app'
+        },
+        tags: [
+            'React',
+            'Accuweather API',
+            'UI Design'
+        ]
     }
 ]

@@ -1,0 +1,19 @@
+// Colour
+@function getColour($colour, $variant: base) {
+  @return map-get(map-get($colours, $colour), $variant);
+}
+
+// Font Size
+@function getFontSize($fontSize, $variant: base) {
+  @return map-get(map-get($fontSizes, $fontSize), $variant);
+}
+
+// Breakpoint
+@function getBreakpoint($breakpoint) {
+  @return map-get($breakpoints, $breakpoint);
+}
+
+// Margin
+@function getMargin($margin) {
+  @return map-get($margins, $margin);
+}

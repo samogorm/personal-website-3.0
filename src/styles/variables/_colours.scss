@@ -1,0 +1,70 @@
+// Colours
+$pink: #FDB4B4;
+$skyBlue: #C9F1FA;
+$yellow: #FFDF97;
+$green: #BCF1CD;
+$white: #ffffff;
+$navy: #14233C;
+$grey: #d8d8dd;
+$steel: #7c828d;
+
+// Other
+$colourShade: 8%;
+$colourTrans: 0.5;
+$colourTransLight: 0.2;
+
+// Maps
+$colours: (
+  pink: (
+    base: $pink,
+    light: lighten($pink, $colourShade),
+    dark: darken($pink, $colourShade),
+    trans: transparentize($pink, $colourTrans),
+    transLight: transparentize($pink, $colourTransLight)
+  ),
+  skyBlue: (
+    base: $skyBlue,
+    light: lighten($skyBlue, $colourShade),
+    dark: darken($skyBlue, $colourShade),
+    trans: transparentize($skyBlue, $colourTrans),
+    transLight: transparentize($skyBlue, $colourTransLight)
+  ),
+  yellow: (
+    base: $yellow,
+    light: lighten($yellow, $colourShade),
+    dark: darken($yellow, $colourShade),
+    trans: transparentize($yellow, $colourTrans),
+    transLight: transparentize($yellow, $colourTransLight)
+  ),
+  green: (
+    base: $green,
+    light: lighten($green, $colourShade),
+    dark: darken($green, $colourShade),
+    trans: transparentize($green, $colourTrans),
+    transLight: transparentize($green, $colourTransLight)
+  ),
+  white: (
+    base: $white,
+    light: lighten($white, $colourShade),
+    dark: darken($white, $colourShade),
+    trans: transparentize($white, $colourTrans)
+  ),
+  navy: (
+    base: $navy,
+    light: lighten($navy, $colourShade),
+    dark: darken($navy, $colourShade),
+    trans: transparentize($navy, $colourTrans)
+  ),
+  grey: (
+    base: $grey,
+    light: lighten($grey, $colourShade),
+    dark: darken($grey, $colourShade),
+    trans: transparentize($grey, $colourTrans)
+  ),
+  steel: (
+    base: $steel,
+    light: lighten($steel, $colourShade),
+    dark: darken($steel, $colourShade),
+    trans: transparentize($steel, $colourTrans)
+  )
+);

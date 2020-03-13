@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Subtitle } from './../subtitle/Subtitle'
-import { Button } from './../button/Button'
+import Button from './../button/Button'
 import { Tag } from '../tag/Tag'
 
 //import {themeColours} from './../../constants/themeColours';
@@ -31,17 +31,14 @@ export const ProjectBlock = (props) => {
                         label="View source"
                         icon="fas fa-code"
                         type="outline"
-                        primaryColour="transparent"
-                        secondaryColour=""
-                        link={props.sourceLink}
+                        url={props.sourceLink}
                     />
                     <Button
                         label="Visit site"
                         icon="fas fa-arrow-right"
                         type="fill"
-                        primaryColour=""
-                        secondaryColour="#fff"
-                        link={props.demoLink}
+                        colour="green"
+                        url={props.demoLink}
                     />
                 </div>
            </div>

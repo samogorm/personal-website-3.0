@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 import {Title} from './../components/title/Title'
 import {Subtitle} from './../components/subtitle/Subtitle'
 import {Paragraph} from './../components/paragraph/Paragraph'
-import {Button} from './../components/button/Button'
+import Button from './../components/button/Button'
 import Avatar from './../components/avatar/Avatar'
 import {SkillBlock} from './../components/skill-block/SkillBlock'
 import {ProjectBlock} from './../components/project-block/ProjectBlock'
@@ -21,7 +21,7 @@ import {ProjectsContent} from './../static-content/ProjectsContent'
 // Constants
 import {themeColours} from './../constants/themeColours';
 
-import './../assets/styles/index.css'
+import './../styles/index.css'
 
 import avatar from './../assets/images/sam.jpg';
 
@@ -38,22 +38,20 @@ const IndexPage = () => {
           <div className="information-buttons">
               <Button 
                 label="Learn more" 
-                icon={null} 
+                icon={ null } 
                 type="fill" 
-                primaryColour={themeColours[4].hex}
-                secondaryColour="#fff"
-                link="#about"
-                scrollTo={true}
+                colour={ themeColours[4].name }
+                url="#about"
+                scrollTo
               />
 
               <Button
                 label="Let's Chat"
                 icon="fas fa-comment"
                 type="outline"
-                primaryColour="transparent"
-                secondaryColour={themeColours[4].hex}
-                link="#contact"
-                scrollTo={true}
+                colour={themeColours[4].name}
+                url="#contact"
+                scrollTo
               />
           </div>
         </div>

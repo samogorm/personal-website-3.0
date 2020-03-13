@@ -7,7 +7,7 @@ import {Title} from './../components/title/Title'
 import {Subtitle} from './../components/subtitle/Subtitle'
 import {Paragraph} from './../components/paragraph/Paragraph'
 import {Button} from './../components/button/Button'
-import {Avatar} from './../components/avatar/Avatar'
+import Avatar from './../components/avatar/Avatar'
 import {SkillBlock} from './../components/skill-block/SkillBlock'
 import {ProjectBlock} from './../components/project-block/ProjectBlock'
 import {CallToAction} from './../components/call-to-action/CallToAction';
@@ -63,7 +63,7 @@ const IndexPage = () => {
       <section id="about" className="about-section">
         <div className="about-content">
           <div className="about-avatar">
-            <Avatar src={avatar} alt="Picture of Sam's face." />
+            <Avatar src={ avatar } alt="Picture of Sam's face." />
           </div>
           <div className="about-text">
             { AboutContent.about.textBlocks.map((block, index) => <Paragraph key={index} text={block} />) }

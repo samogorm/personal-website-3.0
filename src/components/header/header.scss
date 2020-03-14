@@ -5,6 +5,7 @@
   position: fixed;
   width: 100%;
   flex-direction: column;
+  z-index: 100;
 
   @include min-width(sm) {
     padding: 1rem 6rem;
@@ -14,6 +15,27 @@
 
   @include min-width(lg) {
     padding: 1rem 10rem;
+  }
+
+  &__brand {
+    background-color: getColour(grey);
+    padding: .8rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: background-color .25s ease-in-out;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: getColour(blue);
+    }
   }
 
   &__nav {

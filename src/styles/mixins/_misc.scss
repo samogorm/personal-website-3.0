@@ -1,0 +1,11 @@
+@mixin section-padding {
+  padding: 1rem;
+
+  @include min-width(md) {
+    padding: 3rem;
+  }
+
+  @include min-width(lg) {
+    padding: 10rem;
+  }
+}

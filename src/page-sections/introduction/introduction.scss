@@ -1,19 +1,13 @@
 .introduction {
+  @include section-padding;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
   background-color: getColour(white);
 
-  @include min-width(md) {
-    padding: 2rem;
-  }
-
   @include min-width(lg) {
-    padding: $sectionPadding;
-
     &__wrapper {
       width: 80%;
     }

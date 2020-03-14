@@ -1,14 +1,6 @@
 .about {
-  padding: 1rem;
+  @include section-padding;
   background: getColour(grey);
-
-  @include min-width(md) {
-    padding: 2rem;
-  }
-
-  @include min-width(lg) {
-    padding: $sectionPadding;
-  }
 
   &__title {
     margin-bottom: 2rem;

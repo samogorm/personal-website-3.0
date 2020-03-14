@@ -5,27 +5,18 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Introduction from './../page-sections/introduction/introduction';
 import About from '../page-sections/about/about';
+import Experience from '../page-sections/experience/experience';
 
 import Title from './../components/title/title';
-import Paragraph from './../components/paragraph/paragraph'
-import Avatar from './../components/avatar/Avatar'
-import {SkillBlock} from './../components/skill-block/SkillBlock'
+import Paragraph from './../components/paragraph/paragraph';
 import {ProjectBlock} from './../components/project-block/ProjectBlock'
 import {CallToAction} from './../components/call-to-action/CallToAction';
 import {ContactForm} from './../components/contact-form/ContactForm';
 
-// Static Content - later we will use an API to get this data.
-import {AboutContent} from './../static-content/AboutContent'
 import {SkillsContent} from './../static-content/SkillsContent'
 import {ProjectsContent} from './../static-content/ProjectsContent'
 
-// Constants
-import {themeColours} from './../constants/themeColours';
-
 import './../styles/index.css'
-
-import avatar from './../assets/images/sam.jpg';
-
 
 const IndexPage = () => {
   return (
@@ -33,18 +24,8 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Introduction />
       <About />
+      <Experience />
       
-
-      {/* Skills & Expertise */}
-      <section id="skills-and-expertise" className="skills-and-expertise">
-        <div className="skills-title">
-          <Title text="Skills &amp; Expertise" />
-          <Paragraph text="My passion and enthusiasm for coding has lead me to learn and use a multitude of technologies for side projects and professional work." />
-        </div>
-        <div className="skills-grid">
-          { SkillsContent.map(block => <SkillBlock key={block.id} icon={block.icon} title={block.title} subtitle={block.subtitle} />) }
-        </div>
-      </section>
 
       {/* Projects */}
       <section id="projects" className="projects-section">

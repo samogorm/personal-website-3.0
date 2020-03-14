@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 // Custom Components
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import {Title} from './../components/title/Title'
-import {Subtitle} from './../components/subtitle/Subtitle'
-import {Paragraph} from './../components/paragraph/Paragraph'
-import Button from './../components/button/Button'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Introduction from './../page-sections/introduction/introduction';
+
+import Title from './../components/title/title';
+import Paragraph from './../components/paragraph/paragraph'
 import Avatar from './../components/avatar/Avatar'
 import {SkillBlock} from './../components/skill-block/SkillBlock'
 import {ProjectBlock} from './../components/project-block/ProjectBlock'
@@ -29,33 +29,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/* Introduction */}
-      <section className="intro-section">
-        <div className="introduction">
-          <Subtitle text={AboutContent.intro.title} />
-          <Title text={AboutContent.intro.subtitle} />
-          <Paragraph text={AboutContent.intro.text} />
-          <div className="information-buttons">
-              <Button 
-                label="Learn more" 
-                icon={ null } 
-                type="fill" 
-                colour={ themeColours[4].name }
-                url="#about"
-                scrollTo
-              />
-
-              <Button
-                label="Let's Chat"
-                icon="fas fa-comment"
-                type="outline"
-                colour={themeColours[4].name}
-                url="#contact"
-                scrollTo
-              />
-          </div>
-        </div>
-      </section>
+      <Introduction />
+      
 
       {/* About */}
       <section id="about" className="about-section">

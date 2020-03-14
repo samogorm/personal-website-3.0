@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Formik, Form, Field } from 'formik';
 import qs from 'qs';
 import ContactFormSchema from './validation/ContactFormSchema';
-import {Paragraph} from './../paragraph/Paragraph';
+import Paragraph from './../paragraph/paragraph';
 
 import './ContactForm.css';
 import { encode } from 'punycode';

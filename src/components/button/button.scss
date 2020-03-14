@@ -19,37 +19,37 @@
   }
 
   &--pink {
-    background: getColour(pink);
+    background-color: getColour(pink);
     color: getColour(navy);
   }
 
   &--blue {
-    background: getColour(skyBlue);
+    background-color: getColour(skyBlue);
     color: getColour(navy);
   }
 
   &--yellow {
-    background: getColour(yellow);
+    background-color: getColour(yellow);
     color: getColour(navy);
   }
 
-  &--yellow {
-    background: getColour(green);
+  &--green {
+    background-color: getColour(green);
     color: getColour(navy);
   }
 
   &--navy {
-    background: getColour(navy);
+    background-color: getColour(navy);
     color: getColour(white);
   }
 
   &--grey {
-    background: getColour(grey);
+    background-color: getColour(grey);
     color: getColour(navy);
   }
 
   &--steel {
-    background: getColour(steel);
+    background-color: getColour(steel);
     color: getColour(navy);
   }
 
@@ -69,6 +69,41 @@
 
     &:hover {
       background: rgba(20, 35, 60, 0.1) !important;
+    }
+
+    .button--pink {
+      background-color: getColour(pink);
+      color: getColour(navy);
+    }
+
+    .button--blue {
+      background-color: getColour(skyBlue);
+      color: getColour(navy);
+    }
+
+    .button--yellow {
+      background-color: getColour(yellow);
+      color: getColour(navy);
+    }
+
+    .button--green {
+      background: getColour(green);
+      color: getColour(navy);
+    }
+
+    .button--navy {
+      background-color: getColour(navy);
+      color: getColour(white);
+    }
+
+    .button--grey {
+      background-color: getColour(grey);
+      color: getColour(navy);
+    }
+
+    .button--steel {
+      background-color: getColour(steel);
+      color: getColour(navy);
     }
   }
 }

@@ -1,39 +1,5 @@
 /* ~~ Index Page ~~ */
 
-/* Intro */
-.intro-section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-}
-
-@media (min-width: 1280px) {
-    .intro-section {
-        padding: 5rem;
-    }
-}
-
-.intro-section .introduction {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-}
-
-@media (min-width: 1280px) {
-    .intro-section .introduction {
-        width: 50%;
-    }
-}
-
-.intro-section .information-buttons {
-    margin-top: 1.8rem;
-}
-
 /* Theme Colours */
 .pink-theme .intro-section {
     background: var(--main-pink);

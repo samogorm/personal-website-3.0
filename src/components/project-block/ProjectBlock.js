@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Subtitle } from './../subtitle/Subtitle'
+import Subtitle from './../subtitle/subtitle'
 import Button from './../button/Button'
 import { Tag } from '../tag/Tag'
 

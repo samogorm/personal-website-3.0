@@ -31,7 +31,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string,
   label: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,

@@ -1,0 +1,38 @@
+.paragraph {
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.5rem;
+
+  &--pink {
+    color: getColour(pink);
+  }
+
+  &--blue {
+    color: getColour(skyBlue);
+  }
+
+  &--yellow {
+    color: getColour(yellow);
+  }
+
+  &--green {
+    color: getColour(green);
+  }
+
+  &--white {
+    color: getColour(white);
+  }
+
+  &--navy {
+    color: getColour(navy);
+  }
+
+  &--grey {
+    color: getColour(grey);
+  }
+
+  &--steel {
+    color: getColour(steel);
+  }
+}

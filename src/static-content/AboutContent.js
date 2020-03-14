@@ -1,8 +1,9 @@
 export const AboutContent = {
   intro: {
-    title: "Hello! I'm Sam.",
-    subtitle: 'Full Stack Developer',
-    text: 'A Full Stack Developer with an interest in user interface design and an insatiable hunger for learning new development technologies.'
+    title: '👋🏼 Hey there, my name is',
+    name: "Sam O'Gorman.",
+    subtitle: 'I build web-based applications.',
+    text: 'I’m a Software Engineer based in Manchester, UK focussing primarily on the frontend development of websites and web applications.'
   },
   about: {
     image: '',

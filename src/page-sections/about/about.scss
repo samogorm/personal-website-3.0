@@ -23,4 +23,12 @@
       margin-right: 4rem;
     }
   }
+
+  &__avatar {
+    display: none;
+
+    @include min-width(sm) {
+      display: flex;
+    }
+  }
 }

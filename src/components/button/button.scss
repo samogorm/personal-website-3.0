@@ -6,7 +6,7 @@
   letter-spacing: 0;
   font-weight: 600;
   transition: all .3s ease-in-out;
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem 1.8rem;
   margin: 0 .5rem 0 0;
 
   &:hover {
@@ -17,24 +17,13 @@
     margin-right: .7rem;
   }
 
-  &--pink {
-    background-color: getColour(pink);
-    color: getColour(navy);
-  }
-
   &--blue {
     background-color: getColour(blue);
-    color: getColour(navy);
-  }
+    color: getColour(white);
 
-  &--yellow {
-    background-color: getColour(yellow);
-    color: getColour(navy);
-  }
-
-  &--green {
-    background-color: getColour(green);
-    color: getColour(navy);
+    &:hover {
+      background-color: getColour(blue, dark);
+    }
   }
 
   &--navy {
@@ -59,54 +48,5 @@
     &:hover {
       box-shadow: 0 2px 20px 0 rgba(20,35,60,0.19);
     }
-  }
-
-  &--outline,
-  &--outline-pink,
-  &--outline-blue,
-  &--outline-green,
-  &--outline-yellow,
-  &--outline-navy,
-  &--outline-grey,
-  &--outline-steel
-  {
-    background: transparent !important;
-    border: 0.1rem solid getColour(navy);
-    color: getColour(navy);
-  }
-
-  &--outline-pink {
-    border: 0.1rem solid getColour(pink);
-    color: getColour(pink);
-  }
-
-  &--outline-blue {
-    border: 0.1rem solid getColour(blue);
-    color: getColour(blue);
-  }
-
-  &--outline-yellow {
-    border: 0.1rem solid getColour(yellow);
-    color: getColour(yellow);
-  }
-
-  &--outline-green {
-    border: 0.1rem solid getColour(green);
-    color: getColour(green);
-  }
-
-  &--outline-navy {
-    border: 0.1rem solid getColour(navy);
-    color: getColour(navy);
-  }
-
-  &--outline-grey {
-    border: 0.1rem solid getColour(grey);
-    color: getColour(grey);
-  }
-
-  &--outline-steel {
-    border: 0.1rem solid getColour(steel);
-    color: getColour(steel);
   }
 }

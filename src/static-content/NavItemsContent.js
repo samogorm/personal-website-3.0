@@ -13,6 +13,6 @@ export const NavItemsContent = [
   },
   {
     url: "#contact",
-    title: "Get in Touch"
+    title: "Contact"
   }
 ];

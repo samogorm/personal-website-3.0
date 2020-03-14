@@ -4,13 +4,12 @@
   display: flex;
   position: fixed;
   width: 100%;
-  background-color: getColour(white);
-   flex-direction: column;
+  flex-direction: column;
 
   @include min-width(sm) {
-     padding: 1rem 6rem;
-     justify-content: space-between;
-     flex-direction: row;
+    padding: 1rem 6rem;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   @include min-width(lg) {
@@ -46,7 +45,11 @@
     color: getColour(steel);
     transition: color .25s ease-in-out;
     font-family: $monoFont;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+
+    @include min-width(md) {
+      font-size: 0.9rem;
+    }
 
     &:hover {
       cursor: pointer;

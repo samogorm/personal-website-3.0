@@ -6,11 +6,13 @@
   width: 100%;
   flex-direction: column;
   z-index: 100;
+  background-color: getColour(white);
 
   @include min-width(sm) {
     padding: 1rem 6rem;
     justify-content: space-between;
     flex-direction: row;
+    background-color: none;
   }
 
   @include min-width(lg) {
@@ -42,9 +44,11 @@
     background-color: getColour(grey);
     border-radius: 0.5rem;
     margin-top: 1rem;
+    padding: 0 0.5rem;
 
     @include min-width(md) {
       margin-top: 0;
+      padding: 0;
     }
   }
 

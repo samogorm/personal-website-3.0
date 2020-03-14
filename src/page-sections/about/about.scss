@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column-reverse;
 
-    @include min-width(lg) {
+    @include min-width(sm) {
       flex-direction: row;
     }
   }
@@ -18,7 +18,7 @@
   &__text {
     width: 100%;
 
-    @include min-width(lg) {
+    @include min-width(sm) {
       width: 60%;
       margin-right: 4rem;
     }

@@ -1,8 +1,8 @@
 @mixin section-padding {
-  padding: 1rem;
+  padding: 2rem;
 
-  @include min-width(md) {
-    padding: 3rem;
+  @include min-width(sm) {
+    padding: 6rem;
   }
 
   @include min-width(lg) {

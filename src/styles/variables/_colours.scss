@@ -1,12 +1,13 @@
 // Colours
 $pink: #FDB4B4;
-$skyBlue: #C9F1FA;
+$skyBlue: #2dcbee;
 $yellow: #FFDF97;
 $green: #BCF1CD;
 $white: #ffffff;
 $navy: #0B1013;
 $grey: #d8d8dd;
-$steel: #a9afb9;
+$steel: #7c889c;
+$blue: #243afa;
 
 // Other
 $colourShade: 8%;
@@ -28,6 +29,12 @@ $colours: (
     dark: darken($skyBlue, $colourShade),
     trans: transparentize($skyBlue, $colourTrans),
     transLight: transparentize($skyBlue, $colourTransLight)
+  ),
+  blue: (
+    base: $blue,
+    light: lighten($blue, $colourShade),
+    dark: darken($blue, $colourShade),
+    trans: transparentize($blue, $colourTrans)
   ),
   yellow: (
     base: $yellow,

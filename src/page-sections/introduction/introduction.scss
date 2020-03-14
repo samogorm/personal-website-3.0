@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  background-color: getColour(navy);
+  background-color: getColour(white);
 
   @media (min-width: 1280px) {
     padding: 5rem;
@@ -24,6 +24,21 @@
 
     @media (min-width: 1280px) {
       width: 60%;
+    }
+  }
+
+  &__social-icons {
+    display: flex;
+
+    .social-media-icon {
+      font-size: 1.5rem;
+      margin-right: 2.5rem;
+      color: getColour(steel);
+      transition: color .5s ease-in-out;
+
+      &:hover {
+        color: getColour(navy);
+      }
     }
   }
 }

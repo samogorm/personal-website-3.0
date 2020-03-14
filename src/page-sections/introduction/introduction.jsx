@@ -5,6 +5,7 @@ import Button from './../../components/button/button';
 import Paragraph from './../../components/paragraph/paragraph';
 import Title from './../../components/title/title';
 import { AboutContent } from './../../static-content/AboutContent';
+import { SocialMediaContent } from './../../static-content/SocialMediaContent';
 
 import './introduction.scss';
 
@@ -13,15 +14,14 @@ const Introduction = () => (
     <div className="introduction__wrapper">
       <Subtitle
         text={AboutContent.intro.title}
-        colour="steel"
+        colour="blue"
       />
       <Title
         text={ AboutContent.intro.name }
-        colour="white"
       />
       <Title
         text={AboutContent.intro.subtitle}
-        colour="green"
+        colour="steel"
       />
       <div className="introduction__text-wrapper">
         <Paragraph
@@ -29,21 +29,21 @@ const Introduction = () => (
           colour="steel"
         />
       </div>
+      <div className="introduction__social-icons">
+        {SocialMediaContent.map(({ url, icon }, index) => {
+          return (
+            <a key={index} className="social-media-icon" href={ url }>
+              <i className={ icon }></i>
+            </a>
+          )
+        })}
+      </div>
       <div className="introduction__buttons">
-        <Button
-          label="Learn more"
-          icon={null}
-          type="fill"
-          colour="green"
-          url="#about"
-          scrollTo
-        />
-
         <Button
           label="Let's Chat"
           icon="fas fa-comment"
-          type="outline"
-          colour="green"
+          type="fill"
+          colour="blue"
           url="#contact"
           scrollTo
         />

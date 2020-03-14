@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from './../button/Button'
+import Button from './../button/button'
 import Paragraph from '../paragraph/paragraph';
 import Title from '../title/title';
 import Tag from '../tag/tag';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from './../logo/logo';
+import Logo from './../logo/Logo';
 import brand from './../../assets/images/sam-pixel.png';
 import { NavItemsContent } from './../../static-content/NavItemsContent';
 

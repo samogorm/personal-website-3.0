@@ -47,22 +47,22 @@ class ContactForm extends Component {
               {({ errors, touched }) => (
                 <Form data-netlify="true" name="contact" data-netlify-honeypot="bot-field">
                   <div className="contact-form__form-group">
-                    <label className="contact-form__form-label">Name</label>
-                    <Field name="name" component="input" placeholder="Enter your full name..." />
+                    <label htmlFor="name" className="contact-form__form-label">Name</label>
+                    <Field id="name" name="name" component="input" placeholder="Enter your full name..." />
                     {errors.name && touched.name ? (
                     <div className="contact-form__form-error">{errors.name}</div>
                     ) : null}
                   </div>
                   
                   <div className="contact-form__form-group">
-                  <label className="contact-form__form-label">Email</label>
-                    <Field name="email" type="email" component="input" placeholder="Enter your email..." />
+                  <label htmlFor="email" className="contact-form__form-label">Email</label>
+                    <Field id="email" name="email" type="email" component="input" placeholder="Enter your email..." />
                   {errors.email && touched.email ? <div className="contact-form__form-error">{errors.email}</div> : null}
                   </div>
                   
                   <div className="contact-form__form-group">
-                  <label className="contact-form__form-label">Message</label>
-                    <Field name="message" type="message" component="textarea" placeholder="Enter your message..." />
+                  <label htmlFor="message" className="contact-form__form-label">Message</label>
+                    <Field id="message" name="message" type="message" component="textarea" placeholder="Enter your message..." />
                   {errors.message && touched.message ? <div className="contact-form__form-error">{errors.message}</div> : null}
                   </div>
 

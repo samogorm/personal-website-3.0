@@ -7,12 +7,14 @@
   flex-direction: column;
   z-index: 100;
   background-color: getColour(white);
+  border-bottom: 1px solid getColour(grey);
 
   @include min-width(sm) {
     padding: 1rem 6rem;
     justify-content: space-between;
     flex-direction: row;
     background-color: none;
+    border-bottom: none;
   }
 
   @include min-width(lg) {
@@ -54,15 +56,18 @@
   }
 
   &__nav-items {
-    padding-inline-start: 0;
     display: flex;
     list-style: none;
+
+    @include min-width(sm) {
+      padding-inline-start: 0;
+    }
   }
 
   &__nav-item {
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
 
-    @include min-width(md) {
+    @include min-width(sm) {
       margin: 0 1.5rem;
     }
   }
@@ -72,9 +77,13 @@
     color: getColour(steel);
     transition: color .25s ease-in-out;
     font-family: $monoFont;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: none;
     background: none;
+
+    @include min-width(sm) {
+      font-size: 1rem;
+    }
 
     &:hover {
       cursor: pointer;

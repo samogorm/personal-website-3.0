@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Logo from './../logo/logo';
 import brand from './../../assets/images/sam-pixel.png';
@@ -25,9 +25,9 @@ const Header = () => {
         <ul className="header__nav-items">
           { NavItemsContent.map((item, index) => (
             <li key={`nav-item-${index}`} className="header__nav-item">
-              <a onClick={() => scrollTo(item.url)} className="header__nav-anchor">
+              <button onClick={() => scrollTo(item.url)} className="header__nav-anchor">
                 { item.title }
-              </a>
+              </button>
             </li>
           ))}
         </ul>

@@ -1,7 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import Subtitle from './../subtitle/subtitle'
 import Button from './../button/Button'
 import Paragraph from '../paragraph/paragraph';
 import Title from '../title/title';
@@ -9,7 +7,7 @@ import Tag from '../tag/tag';
 
 import './project_block.scss'
 
-const ProjectBlock = ({ title, description, icon, tags, sourceLink, demoLink }) => {
+const ProjectBlock = ({ title, description, tags, sourceLink, demoLink }) => {
   return (
     <div className="project-block">
       <div className="project-block__container">
@@ -22,7 +20,7 @@ const ProjectBlock = ({ title, description, icon, tags, sourceLink, demoLink }) 
             {tags.map((tag, index) => (
               <Tag
                 key={index}
-                text={ index == tags.length - 1 ? tag : `${tag}, `}
+                text={ index === tags.length - 1 ? tag : `${tag}, `}
               />
             ))}
           </div>

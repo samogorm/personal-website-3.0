@@ -68,6 +68,8 @@
     transition: color .25s ease-in-out;
     font-family: $monoFont;
     font-size: 0.7rem;
+    border: none;
+    background: none;
 
     @include min-width(md) {
       font-size: 0.9rem;

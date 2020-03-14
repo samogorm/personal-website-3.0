@@ -1,0 +1,20 @@
+.contact {
+  @include section-padding;
+  background-color: getColour(white);
+  display: flex;
+
+  .contact__form-wrapper {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+
+    .contact-form {
+      width: 100%;
+      justify-content: center;
+
+      @include min-width(md) {
+        width: 50%;
+      }
+    }
+  }
+}

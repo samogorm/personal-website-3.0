@@ -1,0 +1,16 @@
+.list-group {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1280px) {
+    flex-direction: row;
+  }
+
+  &__list {
+    padding-inline-start: 1rem;
+
+    @media (min-width: 1280px) {
+      margin-right: 4rem;
+    }
+  }
+}

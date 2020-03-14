@@ -4,6 +4,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Introduction from './../page-sections/introduction/introduction';
+import About from '../page-sections/about/about';
 
 import Title from './../components/title/title';
 import Paragraph from './../components/paragraph/paragraph'
@@ -25,24 +26,14 @@ import './../styles/index.css'
 
 import avatar from './../assets/images/sam.jpg';
 
+
 const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
       <Introduction />
+      <About />
       
-
-      {/* About */}
-      <section id="about" className="about-section">
-        <div className="about-content">
-          <div className="about-avatar">
-            <Avatar src={ avatar } alt="Picture of Sam's face." />
-          </div>
-          <div className="about-text">
-            { AboutContent.about.textBlocks.map((block, index) => <Paragraph key={index} text={block} />) }
-          </div>
-        </div>
-      </section>
 
       {/* Skills & Expertise */}
       <section id="skills-and-expertise" className="skills-and-expertise">

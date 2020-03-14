@@ -20,7 +20,7 @@ const Introduction = () => (
         text={ AboutContent.intro.name }
       />
       <Title
-        text={AboutContent.intro.subtitle}
+        text={ AboutContent.intro.subtitle }
         colour="steel"
       />
       <div className="introduction__text-wrapper">

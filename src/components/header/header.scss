@@ -41,12 +41,13 @@
   }
 
   &__nav {
-    background-color: getColour(grey);
+    background-color: getColour(white);
     border-radius: 0.5rem;
     margin-top: 1rem;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
 
     @include min-width(md) {
+      background-color: getColour(grey);
       margin-top: 0;
       padding: 0;
     }
@@ -59,7 +60,7 @@
   }
 
   &__nav-item {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 
     @include min-width(md) {
       margin: 0 1.5rem;
@@ -71,13 +72,9 @@
     color: getColour(steel);
     transition: color .25s ease-in-out;
     font-family: $monoFont;
-    font-size: 0.7rem;
+    font-size: 1rem;
     border: none;
     background: none;
-
-    @include min-width(md) {
-      font-size: 0.9rem;
-    }
 
     &:hover {
       cursor: pointer;

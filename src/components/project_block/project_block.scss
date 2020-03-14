@@ -24,4 +24,12 @@
   &__tags {
     margin-top: 0.5rem;
   }
+
+  .button {
+    margin-bottom: 0.5rem !important;
+
+    @include min-width(md) {
+      margin-bottom: 0 !important;
+    }
+  }
 }

@@ -1,0 +1,55 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import Subtitle from './../subtitle/subtitle'
+import Button from './../button/Button'
+import Paragraph from '../paragraph/paragraph';
+import Title from '../title/title';
+import Tag from '../tag/tag';
+
+import './project_block.scss'
+
+const ProjectBlock = ({ title, description, icon, tags, sourceLink, demoLink }) => {
+  return (
+    <div className="project-block">
+      <div className="project-block__container">
+        <div className="project-block__header">
+          <Title
+            text={ title }
+            tag="h4"
+          />
+          <div className="project-block__tags">
+            {tags.map((tag, index) => (
+              <Tag
+                key={index}
+                text={ index == tags.length - 1 ? tag : `${tag}, `}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="project-block__description">
+          <Paragraph
+            text={ description }
+          />
+        </div>
+        <div className="project-block__footer">
+          <Button
+            label="View source"
+            icon="fas fa-code"
+            type="fill"
+            url={ sourceLink }
+          />
+          <Button
+            label="View demo"
+            icon="fas fa-arrow-right"
+            type="fill"
+            colour="blue"
+            url={ demoLink }
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectBlock;

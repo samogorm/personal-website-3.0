@@ -6,15 +6,11 @@ import SEO from '../components/seo';
 import Introduction from './../page-sections/introduction/introduction';
 import About from '../page-sections/about/about';
 import Experience from '../page-sections/experience/experience';
+import Projects from '../page-sections/projects/projects';
 
-import Title from './../components/title/title';
-import Paragraph from './../components/paragraph/paragraph';
-import {ProjectBlock} from './../components/project-block/ProjectBlock'
 import {CallToAction} from './../components/call-to-action/CallToAction';
 import {ContactForm} from './../components/contact-form/ContactForm';
 
-import {SkillsContent} from './../static-content/SkillsContent'
-import {ProjectsContent} from './../static-content/ProjectsContent'
 
 import './../styles/index.css'
 
@@ -25,23 +21,7 @@ const IndexPage = () => {
       <Introduction />
       <About />
       <Experience />
-      
-
-      {/* Projects */}
-      <section id="projects" className="projects-section">
-        <div className="projects-title">
-          <Title text="Projects" />
-          <Paragraph text="I like to keep my skills up to date by making small, open-source apps using my favourite technology." />
-        </div>
-        <div className="projects-grid">
-          { ProjectsContent.map(project => <ProjectBlock key={project.id} title={project.title} description={project.description} sourceLink={project.links.source} demoLink={project.links.demo} icon={project.icon} tags={project.tags} />) }
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="call-to-action-section">
-        <CallToAction title="I’m always up for a chat, if you want to collaborate on something just get in touch" />
-      </section>
+      <Projects />
 
       {/* Contact Form */}
       <section id="contact" className="contact">

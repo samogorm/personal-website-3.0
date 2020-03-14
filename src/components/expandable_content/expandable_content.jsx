@@ -40,7 +40,7 @@ ExpandableContent.defaultProps = {
 
 ExpandableContent.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string,
+  content: PropTypes.array,
   isToggled: PropTypes.bool,
 };
 

@@ -1,0 +1,17 @@
+.projects {
+  @include section-padding;
+  background-color: getColour(white);
+  display: flex;
+  flex-direction: column;
+
+  &__grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+
+    @include min-width(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

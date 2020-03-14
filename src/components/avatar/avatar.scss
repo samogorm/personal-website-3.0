@@ -3,7 +3,7 @@
   width: 150px;
   border-radius: 50%;
 
-  @media (min-width: 1280px) {
+  @include min-width(lg) {
     height: 250px;
     width: 250px;
   }

@@ -1,0 +1,13 @@
+@import './../variables/breakpoints';
+
+@mixin min-width($breakpoint) {
+  @media (min-width: #{getBreakpoint($breakpoint)}px) { 
+    @content;
+  }
+}
+
+@mixin max-width($breakpoint) {
+  @media (max-width: #{getBreakpoint($breakpoint)}px) { 
+    @content;
+  }
+}

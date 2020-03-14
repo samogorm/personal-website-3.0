@@ -7,12 +7,12 @@
   padding: 1rem;
   background-color: getColour(white);
 
-  @media (min-width: 780px) {
+  @include min-width(md) {
     padding: 2rem;
   }
 
-  @media (min-width: 1280px) {
-    padding: 5rem;
+  @include min-width(lg) {
+    padding: $sectionPadding;
 
     &__wrapper {
       width: 80%;

@@ -14,6 +14,10 @@ const ExpandableContent = ({ title, secondTitle, subtitle, content, isToggled })
           <span className="expandable-content__second-title">
             { secondTitle }
           </span>
+
+          <span className="expandable-content__icon">
+            { isOpen ? <i className="fa fa-chevron-down"></i> : <i className="fa fa-chevron-right"></i> }
+          </span>
         </div>
         <span className="expandable-content__subtitle">
           { subtitle }
@@ -36,7 +40,7 @@ ExpandableContent.defaultProps = {
 
 ExpandableContent.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  content: PropTypes.string,
   isToggled: PropTypes.bool,
 };
 

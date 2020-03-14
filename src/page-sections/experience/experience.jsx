@@ -15,7 +15,7 @@ const Experience = () => (
       />
     </div>
     <div className="experience__content">
-      { ExperienceContent.map(({ id, jobTitle, at, dateFrom, dateTo, duties }) => (
+      { ExperienceContent.reverse().map(({ id, jobTitle, at, dateFrom, dateTo, duties }) => (
         <ExpandableContent
           key={`experience-${id}`}
           title={ jobTitle }

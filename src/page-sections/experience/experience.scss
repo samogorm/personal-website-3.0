@@ -1,3 +1,7 @@
 .experience {
   @include section-padding;
+
+  &__title {
+    margin-bottom: 4rem;
+  }
 }

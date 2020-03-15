@@ -58,10 +58,7 @@
   &__nav-items {
     display: flex;
     list-style: none;
-
-    @include min-width(sm) {
-      padding-inline-start: 0;
-    }
+    padding-inline-start: 0;
   }
 
   &__nav-item {

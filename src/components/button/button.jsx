@@ -17,7 +17,7 @@ const Button = ({
   scrollTo
 }) => (
   <button
-    onClick={() => scrollTo ? scrollToElement(url) : window.location(url)}
+    onClick={() => scrollTo ? scrollToElement(url) : window.open(url)}
       className={`button button--${type} button--${colour}`}
   >
     { icon && (<i className={ icon }></i> )}

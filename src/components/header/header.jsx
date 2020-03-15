@@ -15,18 +15,23 @@ const Header = () => {
   return(
     <header className="header">
       <div className="header__brand">
-        <a href="/">
+        <button onClick={() => scrollTo('.introduction')} className="header__nav-anchor">
           <Logo
             image={ brand }
           />
-        </a>
+        </button>
       </div>
       <nav className="header__nav">
         <ul className="header__nav-items">
           { NavItemsContent.map((item, index) => (
             <li key={`nav-item-${index}`} className="header__nav-item">
               <button onClick={() => scrollTo(item.url)} className="header__nav-anchor">
-                { item.title }
+                <span className="header__nav-icon">
+                  <i className={item.icon}></i>
+                </span>
+                <span className="header__nav-text">
+                  { item.title }
+                </span>
               </button>
             </li>
           ))}

@@ -1,18 +1,22 @@
 export const NavItemsContent = [
   {
     url: "#about",
-    title: "About"
+    title: "About",
+    icon: 'fa fa-user'
   },
   {
     url: "#experience",
-    title: "Experience"
+    title: "Experience",
+    icon: 'fa fa-briefcase'
   },
   {
     url: "#projects",
-    title: "Projects"
+    title: "Projects",
+    icon: 'fa fa-laptop-code'
   },
   {
     url: "#contact",
-    title: "Contact"
+    title: "Contact",
+    icon: 'fa fa-envelope'
   }
 ];

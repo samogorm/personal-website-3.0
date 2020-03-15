@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: getColour(navy);
+  background-color: getColour(blue);
   padding: 1.2rem;
 
   p {
@@ -12,5 +12,10 @@
     color: #FFFFFF;
     letter-spacing: 0;
     text-align: center;
+  }
+
+  a {
+    color: getColour(navy);
+    text-decoration: none;
   }
 }

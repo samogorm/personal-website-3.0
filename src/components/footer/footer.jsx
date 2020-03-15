@@ -5,7 +5,7 @@ import './footer.scss';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>Designed and developed by Samantha O'Gorman</p>
+      <p>Built with <a href="https://www.gatsbyjs.org/">Gatsby</a> and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
     </footer>
   );
 };

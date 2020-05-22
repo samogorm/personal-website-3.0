@@ -1,7 +1,7 @@
 export const AboutContent = {
   intro: {
     title: "Hey, I'm Sam",
-    text: 'A Software Engineer living in Darwen. I’m also an average climber 🧗‍♀️, runner 🏃‍♀️ and Apple enthusiast 🤓. I work on the Frontend team at On The Beach, in sunny Manchester 🇬🇧.',
+    text: 'A Software Engineer living in Darwen. I’m also an average climber, runner and Apple enthusiast. I work on the Frontend team at On The Beach, in sunny Manchester 🇬🇧.',
     status: [
       '💻   Learning how to code iOS applications in Swift.',
       '📚   Reading "Sprint" by Jake Knapp.'

@@ -20,8 +20,8 @@ const Button = ({
     onClick={() => scrollTo ? scrollToElement(url) : window.open(url)}
       className={`button button--${type} button--${colour}`}
   >
-    { icon && (<i className={ icon }></i> )}
     { label }
+    { icon && (<i className={ icon }></i> )}
   </button>
 );
 

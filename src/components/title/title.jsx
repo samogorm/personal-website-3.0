@@ -10,7 +10,7 @@ const Title = ({ text, colour, tag: TagName }) => (
 );
 
 Title.defaultProps = {
-  colour: 'navy',
+  colour: 'black',
   tag: 'h2',
 };
 

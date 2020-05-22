@@ -28,6 +28,7 @@ const ProjectBlock = ({ title, description, tags, sourceLink, demoLink }) => {
         <div className="project-block__description">
           <Paragraph
             text={ description }
+            colour="black"
           />
         </div>
         <div className="project-block__footer">
@@ -36,6 +37,7 @@ const ProjectBlock = ({ title, description, tags, sourceLink, demoLink }) => {
             icon="fas fa-code"
             type="fill"
             url={ sourceLink }
+            colour="black"
           />
           <Button
             label="View demo"

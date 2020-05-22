@@ -59,12 +59,6 @@ const ContactForm = () => {
 
   return (
     <div className='contact-form'>
-      <div className="contact-form__info">
-        <h3>Let's Chat</h3>
-        <Paragraph
-          text="I endeavour to reply within 24 hours"
-        />
-      </div>
       <Formik
         initialValues={{
           name: name,

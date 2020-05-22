@@ -1,52 +1,37 @@
 import React from 'react';
 
-import Subtitle from './../../components/subtitle/subtitle';
-import Button from './../../components/button/button';
 import Paragraph from './../../components/paragraph/paragraph';
 import Title from './../../components/title/title';
 import { AboutContent } from './../../static-content/AboutContent';
-import { SocialMediaContent } from './../../static-content/SocialMediaContent';
+
 
 import './introduction.scss';
 
 const Introduction = () => (
   <section className="introduction">
     <div className="introduction__wrapper">
-      <Subtitle
-        text={AboutContent.intro.title}
-        colour="blue"
-      />
       <Title
-        text={ AboutContent.intro.name }
+        text={ AboutContent.intro.title }
+        tag="h1"
       />
-      <Title
-        text={ AboutContent.intro.subtitle }
-        colour="steel"
-      />
-      <div className="introduction__text-wrapper">
+      <div className="introduction__text">
         <Paragraph
-          text={AboutContent.intro.text}
-          colour="steel"
+          text={ AboutContent.intro.text }
+          colour="black"
         />
       </div>
-      <div className="introduction__social-icons">
-        {SocialMediaContent.map(({ url, icon }, index) => {
-          return (
-            <a key={index} className="social-media-icon" href={ url }>
-              <i className={ icon }></i>
-            </a>
-          )
-        })}
-      </div>
-      <div className="introduction__buttons">
-        <Button
-          label="Let's Chat"
-          icon="fas fa-comment"
-          type="fill"
-          colour="blue"
-          url="#contact"
-          scrollTo
+      <div className="introduction__status">
+        <Paragraph
+          text="Currently..."
+          colour="black"
         />
+        { AboutContent.intro.status.map((item, index) => (
+          <Paragraph
+            key={`status-${index}`}
+            text={ item }
+            colour="black"
+          />
+        ))}
       </div>
    </div>
   </section>

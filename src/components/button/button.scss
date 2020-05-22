@@ -14,7 +14,7 @@
   }
 
   i {
-    margin-right: .7rem;
+    margin-left: .7rem;
   }
 
   &--blue {
@@ -24,6 +24,11 @@
     &:hover {
       background-color: getColour(blue, dark);
     }
+  }
+
+  &--black {
+    background-color: getColour(black);
+    color: getColour(white);
   }
 
   &--navy {

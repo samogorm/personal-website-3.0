@@ -2,18 +2,27 @@
   @include section-padding;
   background-color: getColour(white);
   display: flex;
+  flex-direction: column;
 
   .contact__form-wrapper {
-    width: 100%;
-    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__social-icons {
     display: flex;
+    align-self: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
 
-    .contact-form {
-      width: 100%;
-      justify-content: center;
+    .social-media-icon {
+      font-size: 1.5rem;
+      margin-right: 2.5rem;
+      color: getColour(steel);
+      transition: color .25s ease-in-out;
 
-      @include min-width(md) {
-        width: 50%;
+      &:hover {
+        color: getColour(blue);
       }
     }
   }

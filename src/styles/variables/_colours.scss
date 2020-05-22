@@ -8,6 +8,7 @@ $navy: #072b40;
 $grey: #f5f5f5;
 $steel: #7c889c;
 $blue: #243afa;
+$black: #020414;
 
 // Other
 $colourShade: 8%;
@@ -73,5 +74,11 @@ $colours: (
     light: lighten($steel, $colourShade),
     dark: darken($steel, $colourShade),
     trans: transparentize($steel, $colourTrans)
+  ),
+  black: (
+    base: $black,
+    light: lighten($black, $colourShade),
+    dark: darken($black, $colourShade),
+    trans: transparentize($black, $colourTrans)
   )
 );

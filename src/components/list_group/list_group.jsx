@@ -38,7 +38,7 @@ const ListGroup = ({ items, colour, chunk }) => {
 };
 
 ListGroup.defaultProps = {
-  colour: 'navy',
+  colour: 'black',
   chunk: 4
 };
 

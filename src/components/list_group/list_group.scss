@@ -1,7 +1,6 @@
 .list-group {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
 
   @include min-width(lg) {
     flex-direction: row;

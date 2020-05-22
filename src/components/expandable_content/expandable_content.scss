@@ -14,7 +14,7 @@
   }
 
   &__title-wrap {
-    color: getColour(navy);
+    color: getColour(black);
     font-weight: 700;
     position: relative;
   }
@@ -37,7 +37,7 @@
 
     li {
       margin-bottom: 1rem;
-      color: getColour(navy);
+      color: getColour(black);
       font-weight: 600;
     }
   }

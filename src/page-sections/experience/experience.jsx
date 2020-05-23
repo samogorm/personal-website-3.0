@@ -9,11 +9,7 @@ import './experience.scss';
 
 const Experience = () => (
   <section id="experience" className="experience">
-    <div className="experience__title">
-      <Title
-        text="Experience"
-      />
-    </div>
+    <Title text="Experience" />
     <div className="experience__content">
       { ExperienceContent.reverse().map(({ id, jobTitle, at, dateFrom, dateTo, duties }) => (
         <ExpandableContent

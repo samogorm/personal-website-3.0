@@ -8,9 +8,7 @@ import './projects.scss';
 
 const Projects = () => (
   <section id="projects" className="projects">
-    <div className="projects__title">
-      <Title text="Projects" />
-    </div>
+    <Title text="Projects" />
     <div className="projects__grid">
       { ProjectsContent.map(project => 
         <ProjectBlock

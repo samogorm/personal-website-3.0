@@ -1,0 +1,67 @@
+.text {
+  margin: 0;
+
+  &--font-default {
+    font-family: $defaultFont;
+  }
+
+  &--font-mono {
+    font-family: $monoFont;
+  }
+
+  &--blue {
+    color: getColour(blue);
+  }
+
+  &--white {
+    color: getColour(white);
+  }
+
+  &--grey {
+    color: getColour(grey);
+  }
+
+  &--steel {
+    color: getColour(steel);
+  }
+
+  &--black {
+    color: getColour(black);
+  }
+
+  &--weight-default {
+    font-weight: 400;
+  }
+
+  &--weight-bold {
+    font-weight: 900;
+  }
+
+  &--size-xxs {
+    font-size: .8rem;
+  }
+
+  &--size-xs {
+    font-size: 1rem;
+  }
+
+  &--size-s {
+    font-size: 1.2rem;
+  }
+
+  &--size-m {
+    font-size: 1.4rem;
+  }
+
+  &--size-l {
+    font-size: 1.6rem;
+  }
+
+  &--size-xl {
+    font-size: 1.8rem;
+  }
+
+  &--size-xxl {
+    font-size: 2rem;
+  }
+}

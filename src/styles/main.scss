@@ -5,8 +5,27 @@
 @import './mixins/_media_queries';
 @import './mixins/_misc';
 
+// Font
+$defaultFont: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$monoFont: 'Space Mono', Lucida Console, Monaco5, monospace;
+
+// Input
+$inputPadding: 1rem 0.5rem;
+$inputHeight: 2.5rem;
+
+// Borders
+$borderRadius: 0.2rem;
+$borderWidth: 0.08rem;
+
+// Box Shadows
+$boxShadow: rgba(8, 35, 51, 0.1) 0px 2px 14px;
+$boxShadowHover: rgba(8, 35, 51, 0.3) 0px 2px 14px;
+
+// Section
+$sectionPadding: 10rem;
+
 html {
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: $defaultFont;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -22,22 +41,3 @@ body {
    -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-// Font
-$monoFont: 'Space Mono', Lucida Console, Monaco5, monospace;
-
-// Input
-$inputPadding: 1rem 0.5rem;
-$inputHeight: 2.5rem;
-
-// Borders
-$borderRadius: 0.2rem;
-$borderWidth: 0.08rem;
-
-// Box Shadows
-$boxShadow: rgba(8, 35, 51, 0.1) 0px 2px 14px;
-$boxShadowHover: rgba(8, 35, 51, 0.3) 0px 2px 14px;
-
-
-// Section
-$sectionPadding: 10rem;

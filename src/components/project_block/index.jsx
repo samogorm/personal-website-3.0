@@ -1,9 +1,7 @@
 import React from 'react';
 
 import Button from './../button'
-import Paragraph from '../paragraph';
-import Title from '../title';
-import Tag from '../tag';
+import Text from '../text';
 
 import './index.scss'
 
@@ -12,23 +10,31 @@ const ProjectBlock = ({ title, description, tags, sourceLink, demoLink }) => {
     <div className="project-block">
       <div className="project-block__container">
         <div className="project-block__header">
-          <Title
+          <Text
             text={ title }
             tag="h4"
+            size="m"
           />
           <div className="project-block__tags">
             {tags.map((tag, index) => (
-              <Tag
+              <Text
                 key={index}
                 text={ index === tags.length - 1 ? tag : `${tag}, `}
+                tag="span"
+                font="mono"
+                colour="steel"
+                size="xxs"
               />
             ))}
           </div>
         </div>
         <div className="project-block__description">
-          <Paragraph
+          <Text
             text={ description }
             colour="black"
+            tag="p"
+            size="s"
+            weight="default"
           />
         </div>
         <div className="project-block__footer">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Title from './../../components/title';
+import Text from './../../components/text';
 import ProjectBlock from './../../components/project_block';
 import { ProjectsContent } from './../../static-content/ProjectsContent';
 
@@ -8,7 +8,11 @@ import './projects.scss';
 
 const Projects = () => (
   <section id="projects" className="projects">
-    <Title text="Projects" />
+    <Text
+      text="Projects"
+      tag="h2"
+      size="xxl"
+    />
     <div className="projects__grid">
       { ProjectsContent.map(project => 
         <ProjectBlock

@@ -1,13 +1,8 @@
 // Colours
-$pink: #FDB4B4;
-$skyBlue: #2dcbee;
-$yellow: #FFDF97;
-$green: #BCF1CD;
+$blue: #243afa;
 $white: #ffffff;
-$navy: #072b40;
 $grey: #f5f5f5;
 $steel: #7c889c;
-$blue: #243afa;
 $black: #020414;
 
 // Other
@@ -17,51 +12,17 @@ $colourTransLight: 0.2;
 
 // Maps
 $colours: (
-  pink: (
-    base: $pink,
-    light: lighten($pink, $colourShade),
-    dark: darken($pink, $colourShade),
-    trans: transparentize($pink, $colourTrans),
-    transLight: transparentize($pink, $colourTransLight)
-  ),
-  skyBlue: (
-    base: $skyBlue,
-    light: lighten($skyBlue, $colourShade),
-    dark: darken($skyBlue, $colourShade),
-    trans: transparentize($skyBlue, $colourTrans),
-    transLight: transparentize($skyBlue, $colourTransLight)
-  ),
   blue: (
     base: $blue,
     light: lighten($blue, $colourShade),
     dark: darken($blue, $colourShade),
     trans: transparentize($blue, $colourTrans)
   ),
-  yellow: (
-    base: $yellow,
-    light: lighten($yellow, $colourShade),
-    dark: darken($yellow, $colourShade),
-    trans: transparentize($yellow, $colourTrans),
-    transLight: transparentize($yellow, $colourTransLight)
-  ),
-  green: (
-    base: $green,
-    light: lighten($green, $colourShade),
-    dark: darken($green, $colourShade),
-    trans: transparentize($green, $colourTrans),
-    transLight: transparentize($green, $colourTransLight)
-  ),
   white: (
     base: $white,
     light: lighten($white, $colourShade),
     dark: darken($white, $colourShade),
     trans: transparentize($white, $colourTrans)
-  ),
-  navy: (
-    base: $navy,
-    light: lighten($navy, $colourShade),
-    dark: darken($navy, $colourShade),
-    trans: transparentize($navy, $colourTrans)
   ),
   grey: (
     base: $grey,

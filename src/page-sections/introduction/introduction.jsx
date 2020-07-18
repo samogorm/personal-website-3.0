@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Paragraph from './../../components/paragraph';
+import Text from './../../components/text';
 import Title from './../../components/title';
 import { AboutContent } from './../../static-content/AboutContent';
 
@@ -10,28 +10,19 @@ import './introduction.scss';
 const Introduction = () => (
   <section className="introduction">
     <div className="introduction__wrapper">
-      <Title
+      <Text
         text={ AboutContent.intro.title }
         tag="h1"
+        size="xxl"
       />
       <div className="introduction__text">
-        <Paragraph
+        <Text
           text={ AboutContent.intro.text }
           colour="black"
+          tag="p"
+          size="s"
+          weight="default"
         />
-      </div>
-      <div className="introduction__status">
-        <Paragraph
-          text="Currently..."
-          colour="black"
-        />
-        { AboutContent.intro.status.map((item, index) => (
-          <Paragraph
-            key={`status-${index}`}
-            text={ item }
-            colour="black"
-          />
-        ))}
       </div>
    </div>
   </section>

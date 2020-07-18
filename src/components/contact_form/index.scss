@@ -16,7 +16,7 @@
     h3 {
       font-weight: bold;
       font-size: 2rem;
-      color: getColour(navy);
+      color: getColour(black);
       letter-spacing: 0;
       text-align: center;
       margin: 0;
@@ -50,7 +50,7 @@
       -webkit-appearance: none;
       border-radius: 0.25rem;
       padding: .5rem;
-      color: getColour(navy);
+      color: getColour(black);
       font-size: 1rem;
     }
 
@@ -64,7 +64,7 @@
 
   &__form-label {
     font-size: 1rem;
-    color: getColour(navy);
+    color: getColour(black);
     font-weight: bold;
     letter-spacing: 0;
     margin-bottom: 0.5rem;

@@ -1,15 +1,17 @@
 import React from 'react';
 
 import ContactForm from './../../components/contact_form';
-import Title from './../../components/title/title';
+import Text from './../../components/text';
 import { SocialMediaContent } from './../../static-content/SocialMediaContent';
 
 import './contact.scss';
 
 const Contact = () => (
   <section id="contact" className="contact">
-    <Title
+    <Text
       text="Contact"
+      tag="h2"
+      size="xxl"
     />
    <div className="contact__form-wrapper">
     <ContactForm />

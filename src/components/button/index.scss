@@ -31,19 +31,14 @@
     color: getColour(white);
   }
 
-  &--navy {
-    background-color: getColour(navy);
-    color: getColour(white);
-  }
-
   &--grey {
     background-color: getColour(grey);
-    color: getColour(navy);
+    color: getColour(black);
   }
 
   &--steel {
     background-color: #e5e4ec;
-    color: getColour(navy);
+    color: getColour(black);
   }
 
   &--fill {

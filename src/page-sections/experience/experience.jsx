@@ -1,15 +1,18 @@
 import React from 'react';
 
-import Title from './../../components/title';
+import Text from './../../components/text';
 import ExpandableContent from '../../components/expandable_content';
-
 import { ExperienceContent } from './../../static-content/ExperienceContent';
 
 import './experience.scss';
 
 const Experience = () => (
   <section id="experience" className="experience">
-    <Title text="Experience" />
+    <Text
+      text="Experience"
+      tag="h2"
+      size="xxl"
+    />
     <div className="experience__content">
       { ExperienceContent.reverse().map(({ id, jobTitle, at, dateFrom, dateTo, duties }) => (
         <ExpandableContent

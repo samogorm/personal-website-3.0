@@ -3,7 +3,6 @@ import React from 'react';
 import Text from './../../components/text';
 import { AboutContent } from './../../static-content/AboutContent';
 
-
 import './introduction.scss';
 
 const Introduction = () => (

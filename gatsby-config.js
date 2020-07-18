@@ -49,7 +49,8 @@ module.exports = {
           position: "displace",
         },
         plugins: [
-          // We'll add some Tinacms plugins in the next step.
+          "gatsby-tinacms-git",
+          "gatsby-tinacms-remark",
         ],
       },
     }

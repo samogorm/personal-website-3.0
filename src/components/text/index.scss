@@ -63,5 +63,9 @@
 
   &--size-xxl {
     font-size: 2rem;
+
+    @include min-width(lg) {
+      font-size: 3.5rem;
+    }
   }
 }

@@ -6,7 +6,10 @@ import './index.scss';
 
 const Text = ({ colour, font, size, tag: TagName, text, weight }) => (
   <TagName className={`text text--${colour} text--${TagName} text--size-${size} text--font-${font} text--weight-${weight}`}>
-    <ReactMarkdown source={ text } />
+    <ReactMarkdown
+      source={ text }
+      renderers={{ paragraph: 'span' }}
+    />
   </TagName>
 );
 

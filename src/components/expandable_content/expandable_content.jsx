@@ -16,7 +16,7 @@ const ExpandableContent = ({ title, secondTitle, subtitle, content, isToggled })
           </span>
 
           <span className="expandable-content__icon">
-            { isOpen ? <i className="fa fa-chevron-down"></i> : <i className="fa fa-chevron-right"></i> }
+            <i className="fa fa-chevron-right"></i>
           </span>
         </div>
         <span className="expandable-content__subtitle">

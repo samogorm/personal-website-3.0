@@ -1,6 +1,6 @@
 const TEMPLATE_PATH = './src/client/templates/';
 
-const creatBlogPostPages = async (setup) => {
+const createBlogPostPages = async (setup) => {
   const { actions, graphql, reporter } = setup;
   const { createPage } = actions;
   const blogPostTemplate = require.resolve(`${TEMPLATE_PATH}markdown/blog.js`);
@@ -39,5 +39,5 @@ const creatBlogPostPages = async (setup) => {
 };
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  creatBlogPostPages({ actions, graphql, reporter });
+  createBlogPostPages({ actions, graphql, reporter });
 };

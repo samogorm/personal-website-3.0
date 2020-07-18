@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 
 import './index.scss';
 
 const Text = ({ colour, font, size, tag: TagName, text, weight }) => (
   <TagName className={`text text--${colour} text--${TagName} text--size-${size} text--font-${font} text--weight-${weight}`}>
-    { text }
+    <ReactMarkdown source={ text } />
   </TagName>
 );
 

@@ -1,28 +1,27 @@
 import React from 'react';
 
-import Text from './../../components/text';
-import { AboutContent } from './../../static-content/AboutContent';
+import Text from './../../text';
 
-import './introduction.scss';
+import './index.scss';
 
-const Introduction = () => (
+const Introduction = ({ title, text }) => (
   <section className="introduction">
     <div className="introduction__wrapper">
       <Text
-        text={ AboutContent.intro.title }
+        text={ title }
         tag="h1"
         size="xxl"
       />
       <div className="introduction__text">
         <Text
-          text={ AboutContent.intro.text }
+          text={ text }
           colour="black"
           tag="p"
           size="s"
           weight="default"
         />
       </div>
-   </div>
+    </div>
   </section>
 );
 

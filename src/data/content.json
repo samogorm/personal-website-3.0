@@ -21,7 +21,7 @@
     "experience": [
       {
         "id": 1,
-        "jobTitle": "Frontend Developer",
+        "job_title": "Frontend Developer",
         "at": "Suresite Group",
         "dates": {
           "from": "Sep 2016",
@@ -37,7 +37,7 @@
       },
       {
         "id": 2,
-        "jobTitle": "Frontend Developer",
+        "job_title": "Frontend Developer",
         "at": "Sizzle Creative",
         "dates": {
           "from": "Feb 2019",
@@ -51,7 +51,7 @@
       },
       {
         "id": 3,
-        "jobTitle": "Software Engineer",
+        "job_title": "Software Engineer",
         "at": "On The Beach",
         "dates": {
           "from": "Oct 2019",
@@ -150,8 +150,5 @@
         ]
       }
     ]
-  },
-  "intro": {
-    "title": "Hello"
   }
 }

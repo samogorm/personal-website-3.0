@@ -3,7 +3,7 @@ const TEMPLATE_PATH = './src/client/templates/';
 const createBlogPostPages = async (setup) => {
   const { actions, graphql, reporter } = setup;
   const { createPage } = actions;
-  const blogPostTemplate = require.resolve(`${TEMPLATE_PATH}markdown/blog.js`);
+  const blogPostTemplate = require.resolve(`${TEMPLATE_PATH}blog.js`);
 
   const result = await graphql(`
     {

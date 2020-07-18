@@ -1,13 +1,11 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 
-import Text from './../../components/text';
-import ProjectBlock from './../../components/project_block';
-import { ProjectsContent } from './../../static-content/ProjectsContent';
+import Text from './../../text';
+import ProjectBlock from './../../project_block';
 
-import './projects.scss';
+import './index.scss';
 
-const Projects = ({ data }) => (
+const Projects = ({ items }) => (
   <section id="projects" className="projects">
     <Text
       text="Projects"
@@ -15,7 +13,7 @@ const Projects = ({ data }) => (
       size="xxl"
     />
     <div className="projects__grid">
-      { ProjectsContent.map(project => 
+      { items.map(project => 
         <ProjectBlock
           key={project.id}
           title={project.title}

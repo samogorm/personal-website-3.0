@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './title.scss';
+import './index.scss';
 
 const Title = ({ text, colour, tag: TagName }) => (
   <TagName className={`title title--${colour}`}>

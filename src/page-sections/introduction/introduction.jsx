@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Paragraph from './../../components/paragraph/paragraph';
-import Title from './../../components/title/title';
+import Paragraph from './../../components/paragraph';
+import Title from './../../components/title';
 import { AboutContent } from './../../static-content/AboutContent';
 
 

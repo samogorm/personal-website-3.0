@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Title from './../../components/title/title';
-import ExpandableContent from '../../components/expandable_content/expandable_content';
+import Title from './../../components/title';
+import ExpandableContent from '../../components/expandable_content';
 
 import { ExperienceContent } from './../../static-content/ExperienceContent';
 

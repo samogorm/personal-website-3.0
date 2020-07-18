@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Button from './../button/button'
-import Paragraph from '../paragraph/paragraph';
-import Title from '../title/title';
-import Tag from '../tag/tag';
+import Button from './../button'
+import Paragraph from '../paragraph';
+import Title from '../title';
+import Tag from '../tag';
 
-import './project_block.scss'
+import './index.scss'
 
 const ProjectBlock = ({ title, description, tags, sourceLink, demoLink }) => {
   return (

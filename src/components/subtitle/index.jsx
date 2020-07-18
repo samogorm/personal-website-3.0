@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './subtitle.scss';
+import './index.scss';
 
 const Subtitle = ({ text, colour }) => (
   <h5 className={`subtitle subtitle--${colour}`}>{ text }</h5>

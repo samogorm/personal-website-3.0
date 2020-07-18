@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Subtitle from '../subtitle/subtitle';
+import Subtitle from '../subtitle';
 
-import './list_group.scss';
+import './index.scss';
 
 const ListGroup = ({ items, colour, chunk }) => {
 

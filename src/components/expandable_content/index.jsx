@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import './expandable_content.scss';
+import './index.scss';
 
 const ExpandableContent = ({ title, secondTitle, subtitle, content, isToggled }) => {
   const [isOpen, setIsOpen] = useState(isToggled);

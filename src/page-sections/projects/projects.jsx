@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Title from './../../components/title/title';
-import ProjectBlock from './../../components/project_block/project_block';
+import Title from './../../components/title';
+import ProjectBlock from './../../components/project_block';
 import { ProjectsContent } from './../../static-content/ProjectsContent';
 
 import './projects.scss';

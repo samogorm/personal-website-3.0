@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './avatar.scss';
+import './index.scss';
 
 const Avatar = ({ alt, src }) => {
   return (

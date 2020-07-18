@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './tag.scss';
+import './index.scss';
 
 const Tag = ({ text }) => <span className="tag">{ text }</span>
 

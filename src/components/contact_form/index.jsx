@@ -3,9 +3,8 @@ import { Formik, Form, Field } from 'formik';
 import qs from 'qs';
 
 import ContactFormSchema from './validation/ContactFormSchema';
-import Paragraph from './../paragraph/paragraph';
 
-import './contact_form.scss';
+import './index.scss';
 
 const ContactForm = () => {
   const [ success, setSuccess ] = useState(null);

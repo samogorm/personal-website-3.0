@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './paragraph.scss'
+import './index.scss'
 
 const Paragraph = ({ text, colour }) => (
   <p className={`paragraph paragraph--${colour}`}>

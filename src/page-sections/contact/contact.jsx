@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ContactForm from './../../components/contact_form/contact_form';
+import ContactForm from './../../components/contact_form';
 import Title from './../../components/title/title';
 import { SocialMediaContent } from './../../static-content/SocialMediaContent';
 

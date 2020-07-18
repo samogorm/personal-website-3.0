@@ -1,12 +1,13 @@
 .expandable-content {
   &__title {
     background-color: getColour(grey);
-    border: 0.05rem solid getColour(grey);
+    border: 0.1rem solid getColour(grey);
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+    transition: border 0.25s ease-in-out;
 
     &:hover {
       cursor: pointer;
@@ -32,8 +33,9 @@
   }
 
   &__content {
-    display: none;
-    padding: 1em;
+    height: 0;
+    visibility: hidden;
+    transition: all 0.25s ease-in-out;
 
     li {
       margin-bottom: 1rem;
@@ -54,7 +56,10 @@
     }
 
     .expandable-content__content {
-      display: flex;
+      visibility: visible;
+      height: 100%;
+      padding-bottom: 1em;
+      padding-top: 1em;
     }
   }
 }

@@ -1,7 +1,6 @@
 export const ProjectsContent = [
   {
     id: 1,
-    icon: require('./../assets/images/projects/currency-converter-icon.svg'),
     title: 'Currency Converter',
     description: 'A simple currency converter web app. I designed the app and developed the front end in React. I coded the back end API in NodeJS (TypeScript). The API gathers latest currency data every 3 days.',
     links: {
@@ -19,7 +18,6 @@ export const ProjectsContent = [
   },
   {
     id: 2,
-    icon: require('./../assets/images/projects/calculator-icon.svg'),
     title: 'Calculator',
     description: 'A simple calculator web app which was built so I could learn React Hooks. I designed the app and developed the front end in React.',
     links: {
@@ -33,7 +31,6 @@ export const ProjectsContent = [
   },
   {
     id: 3,
-    icon: require('./../assets/images/projects/lifetime-icon.svg'),
     title: 'Lifetime Project',
     description: 'A small web application that shows you how much time you have left to live your life. It was very much inspired by Dhanish Gajjar\'s Lifeproject.',
     links: {
@@ -47,7 +44,6 @@ export const ProjectsContent = [
   },
   {
     id: 4,
-    icon: require('./../assets/images/projects/simple-todos-icon.svg'),
     title: 'Simple Todos',
     description: 'A very simple web application that will add/remove todos using the browser\'s localStorage feature.',
     links: {
@@ -61,7 +57,6 @@ export const ProjectsContent = [
   },
   {
     id: 5,
-    icon: require('./../assets/images/projects/weather-app.svg'),
     title: 'Weather App',
     description: 'A basic web application that will get your current location weather and allow you to add other weather locations.',
     links: {

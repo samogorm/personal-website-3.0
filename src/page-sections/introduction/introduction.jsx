@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Text from './../../components/text';
-import Title from './../../components/title';
 import { AboutContent } from './../../static-content/AboutContent';
 
 

@@ -95,7 +95,7 @@
     "projects": [
       {
         "id": 1,
-        "title": "Currency Converterr",
+        "title": "Currency Converter",
         "description": "A simple currency converter web app. I designed the app and developed the front end in React. I coded the back end API in NodeJS (TypeScript). The API gathers latest currency data every 3 days.",
         "links": {
           "demo": "https://exchange-rates.netlify.com/",

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Sam O'Gorman - Full Stack Developer`,
+    title: `Samantha O'Gorman - Frontend Software Engineer`,
     description: `A personal website to showcase my skills and projects.`,
     author: `@samogorm`,
   },
@@ -19,6 +19,14 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/client/markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -33,6 +41,18 @@ module.exports = {
         icon: `src/assets/images/sam-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-tinacms',
+      options: {
+        enabled: process.env.NODE_ENV !== "production",
+        sidebar: {
+          position: "displace",
+        },
+        plugins: [
+          // We'll add some Tinacms plugins in the next step.
+        ],
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

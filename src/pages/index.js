@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Introduction from './../page-sections/introduction/introduction';
-import Experience from '../page-sections/experience/experience';
-import Projects from '../page-sections/projects/projects';
-import Contact from '../page-sections/contact/contact';
+import Layout from '../client/components/layout';
+import SEO from '../client/components/seo';
+import Introduction from '../client/page-sections/introduction/introduction';
+import Experience from '../client/page-sections/experience/experience';
+import Projects from '../client/page-sections/projects/projects';
+import Contact from '../client/page-sections/contact/contact';
 
 const IndexPage = () => {
   return (

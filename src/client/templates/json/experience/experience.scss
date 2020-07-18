@@ -1,0 +1,7 @@
+.experience {
+  @include section-padding;
+
+  &__content {
+    margin-top: 3rem;
+  }
+}

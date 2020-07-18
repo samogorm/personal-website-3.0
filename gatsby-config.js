@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/client/blog_posts`,
+        path: `${__dirname}/src/blog_posts`,
       },
     },
     `gatsby-transformer-remark`,

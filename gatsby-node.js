@@ -1,4 +1,4 @@
-const TEMPLATE_PATH = './src/client/templates/';
+const TEMPLATE_PATH = './src/templates/';
 
 const createBlogPostPages = async (setup) => {
   const { actions, graphql, reporter } = setup;

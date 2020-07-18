@@ -3,12 +3,12 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { usePlugin } from 'tinacms';
 import { useJsonForm } from 'gatsby-tinacms-json';
 
-import Layout from '../client/components/layout';
-import SEO from '../client/components/seo';
-import Introduction from '../client/components/page_sections/introduction';
-import Experience from '../client/components/page_sections/experience';
-import Projects from '../client/components/page_sections/projects';
-import Contact from '../client/components/page_sections/contact/contact';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Introduction from '../components/page_sections/introduction';
+import Experience from '../components/page_sections/experience';
+import Projects from '../components/page_sections/projects';
+import Contact from '../components/page_sections/contact/contact';
 
 const IndexPage = () => {
   const content = useStaticQuery(graphql`

@@ -2,7 +2,7 @@
   "data": {
     "intro": {
       "title": "Hey, I'm Sam",
-      "text": "A **Software Engineer** living in Darwen. I’m also an average climber, runner and Apple enthusiast. I work on the **Frontend team** at **On The Beach**, in sunny **Manchester** 🇬🇧."
+      "text": "A **Software Engineer** living in Darwen. I’m also an average climber, runner and Apple enthusiast. I work on the **Frontend team** at **On The Beach**, in sunny **Darwen** 🇬🇧."
     },
     "tools": [
       "JavaScript (ES6+)",
@@ -95,7 +95,7 @@
     "projects": [
       {
         "id": 1,
-        "title": "Currency Converter",
+        "title": "Currency Converterr",
         "description": "A simple currency converter web app. I designed the app and developed the front end in React. I coded the back end API in NodeJS (TypeScript). The API gathers latest currency data every 3 days.",
         "links": {
           "demo": "https://exchange-rates.netlify.com/",
@@ -146,20 +146,6 @@
         },
         "tags": [
           "React",
-          "UI Design"
-        ]
-      },
-      {
-        "id": 5,
-        "title": "Weather App",
-        "description": "A basic web application that will get your current location weather and allow you to add other weather locations.",
-        "links": {
-          "demo": "https://basic-weather.netlify.com",
-          "source": "https://github.com/samogorm/weather-app"
-        },
-        "tags": [
-          "React",
-          "Accuweather API",
           "UI Design"
         ]
       }

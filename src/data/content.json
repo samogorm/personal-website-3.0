@@ -20,19 +20,19 @@
     ],
     "experience": [
       {
-        "id": 1,
-        "job_title": "Frontend Developer",
-        "at": "Suresite Group",
+        "id": 3,
+        "job_title": "Software Engineer",
+        "at": "On The Beach",
         "dates": {
-          "from": "Sep 2016",
-          "to": "Feb 2019"
+          "from": "Oct 2019",
+          "to": "Present"
         },
         "duties": [
-          "Work with team members to come up with software requirements.",
-          "Be actively involved in stand-ups and retrospectives.",
-          "Implement new features on in-house CRM and inspection software.",
-          "Listen to and respond to feedback from software users.",
-          "Write software guides for users."
+          "Collaborate with team members to come up with new UX ideas.",
+          "Regularly pair/mob code with other team members and be actively involved in code reviews/feedback.",
+          "Be active in agile processes such as stand-ups, sprint refinements, sprint planning and retrospectives.",
+          "Use a test driven development approach for all implementations.",
+          "Write quality, performant and maintainable code for all microclients and other in-house web applications."
         ]
       },
       {
@@ -50,19 +50,19 @@
         ]
       },
       {
-        "id": 3,
-        "job_title": "Software Engineer",
-        "at": "On The Beach",
+        "id": 1,
+        "job_title": "Frontend Developer",
+        "at": "Suresite Group",
         "dates": {
-          "from": "Oct 2019",
-          "to": "Present"
+          "from": "Sep 2016",
+          "to": "Feb 2019"
         },
         "duties": [
-          "Collaborate with team members to come up with new UX ideas.",
-          "Regularly pair/mob code with other team members and be actively involved in code reviews/feedback.",
-          "Be active in agile processes such as stand-ups, sprint refinements, sprint planning and retrospectives.",
-          "Use a test driven development approach for all implementations.",
-          "Write quality, performant and maintainable code for all microclients and other in-house web applications."
+          "Work with team members to come up with software requirements.",
+          "Be actively involved in stand-ups and retrospectives.",
+          "Implement new features on in-house CRM and inspection software.",
+          "Listen to and respond to feedback from software users.",
+          "Write software guides for users."
         ]
       }
     ],

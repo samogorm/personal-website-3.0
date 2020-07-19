@@ -1,10 +1,11 @@
 import React from 'react';
 
+import SocialIcons from './../../social_icons';
 import Text from './../../text';
 
 import './index.scss';
 
-const Introduction = ({ title, text }) => (
+const Introduction = ({ title, text, socialItems }) => (
   <section className="introduction">
     <div class="introduction__background"></div>
     <div className="introduction__wrapper">
@@ -24,6 +25,7 @@ const Introduction = ({ title, text }) => (
           colour="white"
         />
       </div>
+      <SocialIcons items={ socialItems } colour="white" />
     </div>
   </section>
 );

@@ -5,7 +5,7 @@ import './index.scss';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>Built with <a href="https://www.gatsbyjs.org/">Gatsby</a> and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
+      <p>Built with <a href="https://www.gatsbyjs.org/">Gatsby</a> + <a href="https://tinacms.org/">TinaCMS</a> and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
     </footer>
   );
 };

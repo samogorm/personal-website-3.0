@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 import qs from 'qs';
 
+import Button from './../button';
 import ContactFormSchema from './validation/ContactFormSchema';
 
 import './index.scss';
@@ -13,20 +14,26 @@ const ContactForm = () => {
   const [ message, setMessage ] = useState('');
 
   const renderFormButton = () => {
-    if (success !== null) {
+    if (success) {
       return (
-        <button type="button" className="button button--fill button--navy">
-          <i className="far fa-envelope"></i>
-          Message Sent!
-        </button>
+        <Button
+          type="submit"
+          label="Sent"
+          icon="fas fa-check"
+          fillStyle="fill"
+          colour="black"
+        />
       );
     }
 
     return (
-      <button type="submit" className="button button--fill button--blue">
-        <i className="far fa-envelope-open-text"></i>
-        Send Message
-      </button>
+      <Button
+        type="submit"
+        label="Send"
+        icon="fas fa-arrow-right"
+        fillStyle="fill"
+        colour="blue"
+      />
     );
   };
 
@@ -47,15 +54,6 @@ const ContactForm = () => {
       });
   };
 
-  const resetForm = () => {
-    setSuccess(null);
-    setName('');
-    setEmail('');
-    setMessage('');
-  };
-
-  const renderResetFormComponent = () => success ? (<button onClick={() => resetForm()}> Reset Form</button>) : null;
-
   return (
     <div className='contact-form'>
       <Formik
@@ -69,6 +67,12 @@ const ContactForm = () => {
         validationSchema={ ContactFormSchema }
         onSubmit={(values, { resetForm }) => {
           postContactFormData(values);
+  
+          setSuccess(null);
+          setName('');
+          setEmail('');
+          setMessage('');
+
           resetForm();
         }}
       >
@@ -96,10 +100,6 @@ const ContactForm = () => {
 
             <div className="contact-form__button">
               { renderFormButton() }
-            </div>
-
-            <div className="contact-form__reset">
-              { renderResetFormComponent() }
             </div>
           </Form>
         )}

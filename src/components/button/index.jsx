@@ -12,13 +12,19 @@ const Button = ({
   icon,
   label,
   url,
-  type,
+  fillStyle,
   colour,
-  scrollTo
+  scrollTo,
+  type
 }) => (
   <button
-    onClick={() => scrollTo ? scrollToElement(url) : window.open(url)}
-      className={`button button--${type} button--${colour}`}
+    type={ type }
+    onClick={() => {
+      if (type !== 'submit') {
+        scrollTo ? scrollToElement(url) : window.open(url);
+      }
+    }}
+    className={`button button--${fillStyle} button--${colour}`}
   >
     { label }
     { icon && (<i className={ icon }></i> )}
@@ -28,15 +34,17 @@ const Button = ({
 Button.defaultProps = {
   scrollTo: false,
   colour: 'navy',
+  type: 'button'
 };
 
 Button.propTypes = {
   icon: PropTypes.string,
   label: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  url: PropTypes.string,
+  fillStyle: PropTypes.string.isRequired,
   colour: PropTypes.string,
   scrollTo: PropTypes.bool,
+  type: PropTypes.string,
 };
 
 export default Button;

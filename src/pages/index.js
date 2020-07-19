@@ -104,10 +104,11 @@ const IndexPage = () => {
       <Introduction
         title={ data.data.intro.title }
         text={ data.data.intro.text }
+        socialItems={ data.data.social_platforms }
       />
       <Projects items={ data.data.projects } />
       <Experience items={ data.data.experience } />
-      <Contact socialItems= {data.data.social_platforms } />
+      <Contact socialItems={ data.data.social_platforms } />
     </Layout>
   );
 };

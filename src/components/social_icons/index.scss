@@ -1,0 +1,36 @@
+.social-icons {
+  display: flex;
+  align-self: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+
+  &__icon {
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &--white {
+    .social-icons__icon {
+      color: getColour(white);
+
+      &:hover {
+        color: getColour(black);
+      }
+    }
+  }
+
+  &--steel {
+    .social-icons__icon {
+      color: getColour(steel);
+
+      &:hover {
+        color: getColour(blue);
+      }
+    }
+  }
+}

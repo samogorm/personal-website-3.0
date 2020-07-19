@@ -135,6 +135,19 @@
           "React",
           "UI Design"
         ]
+      },
+      {
+        "id": 4,
+        "title": "Simple Todos",
+        "description": "A small web application that shows you how much time you have left to live your life. It was very much inspired by Dhanish Gajjar's Lifeproject.",
+        "links": {
+          "demo": "https://simple-todos.netlify.app/",
+          "source": "https://github.com/samogorm/simple-todos"
+        },
+        "tags": [
+          "React",
+          "UI Design"
+        ]
       }
     ]
   }

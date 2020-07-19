@@ -12,13 +12,15 @@
   }
 
   &__header {
+    margin-bottom: 2rem;
+  
     .title {
       font-size: 1.5rem !important;
     }
   }
 
   &__description {
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
 
   &__tags {
@@ -28,7 +30,7 @@
   .button {
     margin-bottom: 0.5rem !important;
 
-    @include min-width(md) {
+    @include min-width(lg) {
       margin-bottom: 0 !important;
     }
   }

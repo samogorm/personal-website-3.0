@@ -17,3 +17,24 @@
     padding: 8rem 30rem;
   }
 }
+
+@mixin section-padding-large {
+  padding: 4rem 1rem;
+
+  @include min-width(sm) {
+    padding: 6rem 6rem;
+  }
+
+  @include min-width(lg) {
+    padding: 8rem 10rem;
+  }
+
+  @include min-width(xl) {
+    padding: 10rem 20rem;
+  }
+
+  @include min-width(xxl) {
+    padding: 12rem 30rem;
+  }
+}
+

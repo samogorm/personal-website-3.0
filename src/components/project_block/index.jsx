@@ -28,7 +28,7 @@ const ProjectBlock = ({ title, description, tags, sourceLink, demoLink }) => {
             ))}
           </div>
         </div>
-        <div className="project-block__description">
+        {/* <div className="project-block__description">
           <Text
             text={ description }
             colour="black"
@@ -36,17 +36,17 @@ const ProjectBlock = ({ title, description, tags, sourceLink, demoLink }) => {
             size="s"
             weight="default"
           />
-        </div>
+        </div> */}
         <div className="project-block__footer">
           <Button
-            label="View source"
+            label="Code"
             icon="fas fa-code"
             type="fill"
             url={ sourceLink }
             colour="black"
           />
           <Button
-            label="View demo"
+            label="Demo"
             icon="fas fa-arrow-right"
             type="fill"
             colour="blue"

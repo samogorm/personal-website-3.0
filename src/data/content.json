@@ -1,7 +1,7 @@
 {
   "data": {
     "intro": {
-      "title": "Hey, I'm Sam. I make webby things.",
+      "title": "",
       "text": "A Bolton-born, **Software Engineer**  living in Darwen. I’m also an average climber, runner and ex-wannabe Zoologist. I currently work on the **Frontend team** at **On The Beach**, in _sunny_ **Manchester** 🇬🇧."
     },
     "tools": [
@@ -107,32 +107,6 @@
           "Node",
           "Express",
           "MongoDB",
-          "UI Design"
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Calculator",
-        "description": "A simple calculator web app which was built so I could learn React Hooks. I designed the app and developed the front end in React.",
-        "links": {
-          "demo": "https://samogorm.github.io/simple-calculator/",
-          "source": "https://github.com/samogorm/simple-calculator"
-        },
-        "tags": [
-          "React",
-          "UI Design"
-        ]
-      },
-      {
-        "id": 3,
-        "title": "Lifetime Project",
-        "description": "A small web application that shows you how much time you have left to live your life. It was very much inspired by Dhanish Gajjar's Lifeproject.",
-        "links": {
-          "demo": "https://lifetimeproject.netlify.com/",
-          "source": "https://github.com/samogorm/lifetime"
-        },
-        "tags": [
-          "React",
           "UI Design"
         ]
       },
